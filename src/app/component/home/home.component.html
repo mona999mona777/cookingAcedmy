@@ -1,0 +1,95 @@
+<section class="home d-flex justify-content-center align-items-center pt-5">
+  <div
+    class="container-fluid text-center home-content bg-main-glassy rounded-5 mt-5 py-5 border border-danger-subtle"
+  >
+    <div class="box-h1 rounded-5">
+      <h1 class="mb-3 p-3">
+        <b>{{ "home.Chefs Training Academy" | translate }}</b>
+      </h1>
+    </div>
+    <div>
+      <h2 class="mb-4 danger text-decoration-underline text-center">
+        <b>{{ "home.Next Cooking Class Starts After:" | translate }}</b>
+      </h2>
+      <div class="row g-2">
+        <div class="col-3">
+          <div class="border rounded py-2 bg-main-dark sec-color text-center">
+            <span class="py-5 my-5" id="day">{{ day }}</span>
+            <span class="pe-2"> {{ "home.Day" | translate }}</span>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="border rounded py-2 bg-main-dark sec-color text-center">
+            <span class="py-5 my-5" id="hour">{{ hour }}</span>
+            <span class="pe-2"> {{ "home.Hour" | translate }}</span>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="border rounded py-2 bg-main-dark sec-color text-center">
+            <span class="py-5 my-5" id="mint">{{ mint }}</span>
+            <span class="pe-2"> {{ "home.Mint" | translate }}</span>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="border rounded py-2 bg-main-dark sec-color text-center">
+            <span class="py-5 my-5" id="sec">{{ sec }}</span>
+            <span class="pe-2"> {{ "home.Sec" | translate }}</span>
+          </div>
+        </div>
+      </div>
+      <p
+        class="text-primary-emphasis mt-4 wish-prag prag"
+        [class.text-end]="LangText()"
+        [class.text-start]="!LangText()"
+      >
+        {{ "home.Wish You Good Luck" | translate }}
+        <i class="fa-solid fa-heart"></i>....
+      </p>
+    </div>
+  </div>
+</section>
+<!--section 2 -->
+<section class="secod-section mt-3 py-5 text-bg">
+  <div class="container">
+    <div class="title py-2">
+      <h2 class="text-center sec-color text-decoration-underline pb-3 fs-1">
+        {{ "home.Main Goal" | translate }}
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div>
+          <p class="prag">
+            {{
+              "home.We all want to learn the art of cooking for different reasons (
+            showing love through a delicious home-cooked meal for all our loved
+            ones!!, Learning as a relaxing hobby alongside the work we love!!,
+            Also our passion for cooking can be our own source of income and
+            that's great if your passion is your job. and many different and
+            special reasons each of us has his own reason .... That's why we
+            present to you this diploma prepared by world cooking experts you
+            can watch the description and also instead of stopping the video to
+            write the ingredients or take a screenshot of it it is now written
+            for you (the ingredients and the method) so let's start this
+            professional adventure. Good luck to all )...." | translate
+            }}
+          </p>
+          <span
+            ><b class="danger"
+              >{{ "home.so let`s get started" | translate }}
+              <i class="fa-solid fa-heart"></i> .........</b
+            ></span
+          >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img
+          height="300px"
+          class="rounded w-100 shadow-lg"
+          src="./assets/images/new/HOME6.png"
+          alt="our achievements image"
+        />
+      </div>
+    </div>
+  </div>
+</section>

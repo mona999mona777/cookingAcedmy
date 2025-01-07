@@ -1,0 +1,99 @@
+@if (theOrder) {
+<div class="pt-5">
+  <section class="container w-75 mx-auto shadow my-5 p-5">
+    <h2 class="h2 sec-color text-decoration-underline">
+      {{ "invoice.your invoice" | translate }}
+    </h2>
+
+    <div
+      class="row product bg-warning-subtle shadow-lg my-3 align-items-center justify-content-center py-3 rounded"
+    >
+      <div class="row py-2">
+        <div class="col-xl-6 mb-3">
+          <img
+            src="./assets/images/new/invoice.png"
+            alt="our invoce logo "
+            class="w-100 rounded-3"
+          />
+        </div>
+        <div class="col-xl-6">
+          <P>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.User Name" | translate }}:</span
+            >
+            {{ theOrder.user.name }}</P
+          >
+          <P>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.User Email" | translate }}:</span
+            >
+            {{ theOrder.user.email }}</P
+          >
+          <P>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.User phone" | translate }}:</span
+            >
+            {{ theOrder.shippingAddress.phone }}</P
+          >
+          <P>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.User city" | translate }}:</span
+            >
+            {{ theOrder.shippingAddress.city }}</P
+          >
+          <P>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.User id" | translate }}:</span
+            >
+            {{ theOrder.user._id }}</P
+          >
+          <P>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.date" | translate }}:</span
+            >
+            {{ theOrder.paidAt | date }}</P
+          >
+
+          <P>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.payment status" | translate }}:</span
+            >
+            {{ theOrder.isPaid }}</P
+          >
+          <P>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.Payment Method" | translate }} :</span
+            >
+            {{ theOrder.paymentMethodType }}</P
+          >
+          <P>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.Order Id" | translate }}:</span
+            >
+            {{ theOrder.id }}</P
+          >
+          <p>
+            <span class="text-primary-emphasis"
+              >{{ "invoice.price" | translate }} :</span
+            >
+            {{ theOrder.totalOrderPrice }} {{ "invoice.EPG" | translate }}
+          </p>
+        </div>
+        <p
+          class="danger"
+          [class.text-end]="LangText()"
+          [class.text-start]="!LangText()"
+        >
+          {{ "invoice.wish you luck" | translate }}
+          <i class="fa-solid fa-heart"></i>
+
+          <img
+            src="./assets/images/signature.png"
+            alt=" signature of payment"
+          />
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+}

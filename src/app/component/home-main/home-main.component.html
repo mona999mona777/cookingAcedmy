@@ -1,0 +1,50 @@
+<section
+  class="home d-flex align-items-center justify-content-center text-center pt-5"
+>
+  <div
+    class="container-fluid home-content bg-main-glassy rounded-5 py-5 mt-5 border border-danger-subtle"
+  >
+    <div class="box-h1 rounded-5">
+      <h1 class="mb-3 p-3">
+        <b>{{ "home.Chefs Training Academy" | translate }}</b>
+      </h1>
+    </div>
+    <h2 class="danger mb-4 text-decoration-underline text-center">
+      {{ "home.Exam Date After" | translate }} :
+    </h2>
+    <div class="row g-2">
+      <div class="col-3">
+        <div class="border rounded py-2 bg-main-dark sec-color text-center">
+          <span class="py-5 my-5" id="day">{{ day }}</span
+          ><span class="pe-2"> {{ "home.Day" | translate }}</span>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="border rounded py-2 bg-main-dark sec-color text-center">
+          <span class="py-5 my-5" id="hour">{{ hour }}</span>
+          <span class="pe-2"> {{ "home.Hour" | translate }}</span>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="border rounded py-2 bg-main-dark sec-color text-center">
+          <span class="py-5 my-5" id="mint">{{ mint }}</span
+          ><span class="pe-2"> {{ "home.Mint" | translate }}</span>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="border rounded py-2 bg-main-dark sec-color text-center">
+          <span class="py-5 my-5" id="sec">{{ sec }}</span>
+          <span class="pe-2"> {{ "home.Sec" | translate }}</span>
+        </div>
+      </div>
+    </div>
+    <p
+      class="text-primary-emphasis mt-4 wish-prag prag"
+      [class.text-end]="LangText()"
+      [class.text-start]="!LangText()"
+    >
+      {{ "home.Wish You Good Luck" | translate }}
+      <i class="fa-solid fa-heart"></i>....
+    </p>
+  </div>
+</section>

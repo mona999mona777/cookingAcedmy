@@ -1,0 +1,36 @@
+@if (ingradient) {
+<div class="bg-main py-5">
+  <section class="py-5 text-center bg-main py-5">
+    <div class="title py-5">
+      <h2 class="text-decoration-underline primary-color">
+        Ingradient Name:
+        <span class="sec-color text-decoration-underline">{{
+          categoryName
+        }}</span>
+      </h2>
+    </div>
+    <div class="content container-fluid">
+      <div class="row g-4">
+        @for (oneIngra of ingradient; track $index) {
+        <div
+          class="col-md-6 col-lg-4 col-xl-3"
+          [routerLink]="['/details', oneIngra.idMeal]"
+        >
+          <div
+            class="rounded border border-danger-subtle p-3 bg-main shadow h-100"
+          >
+            <img
+              src="{{ oneIngra.strMealThumb }}"
+              class="w-100 rounded"
+              alt="{{ oneIngra.strMeal }}"
+            />
+
+            <h3 class="mt-3 h5 sec-color">{{ oneIngra.strMeal }}</h3>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </section>
+</div>
+}

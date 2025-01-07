@@ -1,0 +1,19 @@
+{
+  "routes": [
+    "/",
+    "/achivements",
+    "/allareas",
+    "/allcategories",
+    "/allingradiants",
+    "/allorders",
+    "/chefs",
+    "/DiplopmaDates",
+    "/enroll",
+    "/examPleace",
+    "/forgetpassword",
+    "/home",
+    "/invoice",
+    "/mainpage",
+    "/testmonials"
+  ]
+}

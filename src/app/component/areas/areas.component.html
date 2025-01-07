@@ -1,0 +1,22 @@
+@if (allareas) {
+<div class="py-5 bg-main">
+  <section class="py-5 text-center">
+    <div class="content container-fluid py-5">
+      <div class="row g-4">
+        @for (area of allareas; track $index) {
+        <div
+          [routerLink]="['/onearea', area.strArea]"
+          class="col-md-6 col-lg-4 col-xl-3"
+        >
+          <div
+            class="rounded border border-danger-subtle p-3 bg-main shadow h-100"
+          >
+            <h3 class="h4 sec-color-weight">{{ area.strArea }}</h3>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </section>
+</div>
+}

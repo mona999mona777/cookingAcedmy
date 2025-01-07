@@ -1,0 +1,143 @@
+<section class="footer text-light">
+  <div class="footer d-flex justify-content-center align-items-center">
+    <div class="container-fluid pb-3">
+      <h3 class="footer-header py-3 h2">
+        {{ "footer.get in touch" | translate }}
+      </h3>
+      <p class="my-4">
+        {{
+          "footer.Our Cooking School features a long and proud history of more than 100 years. Founded at the end of the XIXth century."
+            | translate
+        }}
+      </p>
+
+      <p>
+        {{
+          "footer.Enter Email here to be updated. We promise not to send you spam!"
+            | translate
+        }}
+      </p>
+      <div class="row">
+        <form
+          class="col-md-8 my-3 d-flex justify-content-center align-items-center gap-3"
+        >
+          <input
+            class="form-control w-75"
+            type="text"
+            name="contact-us"
+            placeholder="{{ 'footer.Send Your E-mail' | translate }}"
+          />
+          <button type="submit" class="btn-main">
+            {{ "footer.Subscribe" | translate }}
+          </button>
+        </form>
+        <ul
+          class="col-md-4 my-3 d-flex justify-content-center align-items-center"
+        >
+          <li class="ms-4">
+            <a><i class="fs-5 fa-brands fa-facebook"></i></a>
+          </li>
+          <li class="ms-4">
+            <a><i class="fs-5 fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="ms-4">
+            <a><i class="fs-5 fa-brands fa-linkedin"></i></a>
+          </li>
+          <li class="ms-4">
+            <a><i class="fs-5 fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="row g-3">
+        <li class="col-lg-4">
+          <i class="mx-2 fa-solid fa-location-dot"></i
+          >{{ "footer.828 Al Hosary Street , New Alamein, Egypt" | translate }}
+          .
+        </li>
+        <li class="col-lg-4">
+          <i class="mx-2 fa-solid fa-phone"></i
+          >{{ "footer.+8 (800) 238 3597 (admin)" | translate }}
+        </li>
+        <li class="col-lg-4">
+          <i class="mx-2 fa-solid fa-envelope"></i>
+          <span class="m-0 p-0 mail"
+            >ChefsTrainingAcademy<i class="fa-solid fa-at"></i>gmail.com</span
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer container-fluid pay-details">
+    <div class="row text-center align-items-center">
+      <div class="col-md-7">
+        <ul class="row justify-content-center align-items-center p-0">
+          <li class="col-4">
+            <h3 class="h6 m-0 text-warning">
+              {{ "footer.Payment partners" | translate }}
+            </h3>
+          </li>
+          <li class="col-2 px-2">
+            <img
+              src="./assets/images/pay/amazon-pay.png"
+              class="w-100"
+              alt="amazon-pay image"
+            />
+          </li>
+          <li class="col-2 px-2">
+            <img
+              src="./assets/images/pay/American-Express-Color.png"
+              class="w-100"
+              alt=""
+            />
+          </li>
+          <li class="col-2 px-2">
+            <img
+              src="./assets/images/pay/paypal.png"
+              class="w-100"
+              alt="paypal image"
+            />
+          </li>
+          <li class="col-2 px-2">
+            <img
+              src="./assets/images/pay/mastercard.webp"
+              class="w-100"
+              alt="mastercard image"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-5">
+        <ul class="row justify-content-center align-items-center p-0">
+          <li class="col-6">
+            <h3 class="h6 m-0 text-warning">
+              {{ "footer.Get Deliveries" | translate }}
+            </h3>
+          </li>
+          <li class="col-3">
+            <img
+              src="./assets/images/pay/get-google-play.png"
+              class="w-100"
+              alt="get-google-play image"
+            />
+          </li>
+          <li class="col-3">
+            <img
+              src="./assets/images/pay/get-apple-store.png"
+              class="w-100"
+              alt="get-apple-store image"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-write shadow text-center border-top py-3">
+    <p>
+      © {{ "footer.Chefs Training Academy" | translate }} |
+      {{ "footer.developed by" | translate }}
+      <b class="yellow fs-2 mx-2">{{ "footer.Mariam Yasser" | translate }}</b>
+    </p>
+  </div>
+</section>

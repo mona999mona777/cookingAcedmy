@@ -1,0 +1,31 @@
+@if (allcategories) {
+<div class="py-5">
+  <section class="py-5 text-center">
+    <div class="content container-fluid py-5">
+      <div class="row g-4">
+        @for (cat of allcategories; track $index) {
+        <div
+          [routerLink]="['/onecategory', cat.strCategory]"
+          class="col-md-6 col-lg-4 col-xl-3"
+        >
+          <div
+            class="rounded border border-danger-subtle p-3 bg-main shadow h-100"
+          >
+            <img
+              src="{{ cat.strCategoryThumb }}"
+              class="w-100"
+              alt="{{ cat.strCategory }}"
+            />
+
+            <h3 class="h4 sec-color mt-2">{{ cat.strCategory }}</h3>
+            <p class="desc text-secondary-emphasis prag">
+              {{ cat.strCategoryDescription.split(" ", 10).join(" ") }}
+            </p>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </section>
+</div>
+}

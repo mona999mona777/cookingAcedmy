@@ -1,0 +1,239 @@
+<div class="pt-5">
+  <section class="container py-5 mt-3">
+    <div class="row mt-5">
+      <div class="text col-md-6">
+        <h2 class="py-4 sec-color text-decoration-underline">
+          {{ "enroll.Terms And Conditions Of Enrollment" | translate }} :
+        </h2>
+        <ol>
+          <li class="prag">
+            {{
+              "enroll.The duration of the diploma is two months from the date of the diploma start and not from the date of reservation, as the diploma dates are fixed and do not change from one person to another according to the reservation date"
+                | translate
+            }}.
+          </li>
+          <li class="prag">
+            {{
+              "enroll.Upon reservation, the examinee will be notified of the exam date, provided that the exam is not connected to the Internet"
+                | translate
+            }}.
+          </li>
+          <li class="prag">
+            {{
+              "enroll.The examinee must obtain 80% of the exam mark and the examinee will receive an accredited certificate"
+                | translate
+            }}.
+          </li>
+          <li class="prag">
+            {{
+              "enroll.This diploma is intended for mothers and fathers, working women, or students who do not have enough time to attend"
+                | translate
+            }}.
+          </li>
+
+          <li class="prag">
+            {{
+              "enroll.The Student is not entitled To a Refund Of Diploma Amount After Booking"
+                | translate
+            }}.
+          </li>
+        </ol>
+      </div>
+      <div class="col-md-6">
+        <div class="theform w-100 p-3 rounded-5 shadow-lg">
+          <div class="title">
+            <h2 class="sec-color text-decoration-underline text-center">
+              {{ "enroll.Enroll Now" | translate }}
+            </h2>
+          </div>
+          <form [formGroup]="register" (ngSubmit)="registerfunction()">
+            <div class="my-2">
+              <label class="prag" for="name">{{
+                "enroll.Full Name" | translate
+              }}</label>
+              <input
+                [ngClass]="{ 
+        'is-valid':!register.get('name')?.errors && (register.get('name')?.touched ||
+        register.get('name')?.dirty),
+        'is-invalid':register.get('name')?.errors && (register.get('name')?.touched ||
+        register.get('name')?.dirty),
+     }"
+                id="name"
+                type="sec"
+                class="form-control"
+                formControlName="name"
+              />
+              @if (register.get('name')?.errors &&
+              (register.get('name')?.touched ||register.get('name')?.dirty)) {
+              <div class="alert alert-danger">
+                @if (register.get('name')?.getError('required')) {
+                <p class="m-0">
+                  {{ "formprag.name is required" | translate }}.
+                </p>
+                } @else if (register.get('name')?.getError('minlength')) {
+                <p class="m-0">
+                  {{
+                    "formprag.name should be more or equal tha 3 chars"
+                      | translate
+                  }}.
+                </p>
+                } @else if (register.get('name')?.getError('maxlength')) {
+                <p class="m-0">
+                  {{
+                    "formprag.name should be less or equal tha 20 chars"
+                      | translate
+                  }}.
+                </p>
+                }
+              </div>
+              }
+            </div>
+            <div class="my-2">
+              <label class="prag" for="email">{{
+                "enroll.email" | translate
+              }}</label>
+              <input
+                [ngClass]="{ 
+        'is-valid':!register.get('email')?.errors && (register.get('email')?.touched ||
+        register.get('email')?.dirty),
+        'is-invalid':register.get('email')?.errors && (register.get('email')?.touched ||
+        register.get('email')?.dirty),
+     }"
+                id="email"
+                type="email"
+                class="form-control"
+                formControlName="email"
+              />
+              @if (register.get('email')?.errors &&
+              (register.get('email')?.touched ||register.get('email')?.dirty)){
+              <div class="alert alert-danger">
+                @if (register.get('email')?.getError('required')) {
+                <p class="m-0">
+                  {{ "formprag.email is required" | translate }}.
+                </p>
+                } @else if (register.get('email')?.getError('email')) {
+                <p class="m-0">
+                  {{ "formprag.enter valid email" | translate }}.
+                </p>
+                }
+              </div>
+              }
+            </div>
+            <div class="my-2">
+              <label class="prag" for="password">{{
+                "enroll.password" | translate
+              }}</label>
+              <input
+                [ngClass]="{ 
+        'is-valid':!register.get('password')?.errors && (register.get('password')?.touched ||
+        register.get('password')?.dirty),
+        'is-invalid':register.get('password')?.errors && (register.get('password')?.touched ||
+        register.get('password')?.dirty),
+     }"
+                id="password"
+                type="password"
+                class="form-control"
+                formControlName="password"
+              />
+              @if (register.get('password')?.errors &&
+              (register.get('password')?.touched
+              ||register.get('password')?.dirty)) {
+              <div class="alert alert-danger">
+                @if (register.get('password')?.getError('required')) {
+                <p class="m-0">
+                  {{ "formprag.password is required" | translate }}.
+                </p>
+                } @else if (register.get('password')?.getError('pattern')) {
+                <p class="m-0">
+                  {{ "formprag.enter valid password" | translate }}.
+                </p>
+                }
+              </div>
+              }
+            </div>
+            <div class="my-2">
+              <label class="prag" for="repassword">{{
+                "enroll.repassword" | translate
+              }}</label>
+              <input
+                [ngClass]="{ 
+        'is-valid':!register.getError('mismatch')  && (register.get('rePassword')?.touched ||
+        register.get('rePassword')?.dirty),
+        'is-invalid':register.getError('mismatch')  && (register.get('rePassword')?.touched ||
+        register.get('rePassword')?.dirty),
+     }"
+                id="repassword"
+                type="password"
+                class="form-control"
+                formControlName="rePassword"
+              />
+              @if (register.getError('mismatch') &&
+              (register.get('rePassword')?.touched
+              ||register.get('rePassword')?.dirty)) {
+              <div class="alert alert-danger">
+                <p class="m-0">
+                  {{
+                    "formprag.password confirmation is incorrect" | translate
+                  }}
+                  .
+                </p>
+              </div>
+              }
+            </div>
+            <div class="my-2">
+              <label class="prag" for="phone">{{
+                "enroll.phone" | translate
+              }}</label>
+              <input
+                [ngClass]="{ 
+        'is-valid':!register.get('phone')?.errors && (register.get('phone')?.touched ||
+        register.get('phone')?.dirty),
+        'is-invalid':register.get('phone')?.errors && (register.get('phone')?.touched ||
+        register.get('phone')?.dirty),
+     }"
+                id="phone"
+                type="tel"
+                class="form-control"
+                formControlName="phone"
+              />
+              @if (register.get('phone')?.errors &&
+              (register.get('phone')?.touched || register.get('phone')?.dirty))
+              {
+              <div class="alert alert-danger">
+                @if (register.get('phone')?.getError('required')) {
+                <p class="m-0">
+                  {{ "formprag.phone is required" | translate }}.
+                </p>
+                } @else if (register.get('phone')?.getError('pattern')) {
+                <p class="m-0">
+                  {{ "formprag.enter valid phone" | translate }}.
+                </p>
+                }
+              </div>
+              }
+            </div>
+            <button
+              class="btn-main d-block"
+              [class.ms-auto]="LangText()"
+              [class.me-auto]="!LangText()"
+              type="submit"
+            >
+              {{ "enroll.register" | translate }} @if (isloading) {
+              <span class="fas fa-spin fa-spinner"></span>}
+            </button>
+          </form>
+
+          @if (messgerror) {
+          <p class="text-center alert alert-danger w-50 mx-auto">
+            {{ messgerror }}
+          </p>
+          } @if (messsuccess) {
+          <p class="text-center alert alert-success w-50 mx-auto">
+            {{ messsuccess }}
+          </p>
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

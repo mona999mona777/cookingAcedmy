@@ -1,0 +1,223 @@
+<nav class="navbar navbar-expand-lg position-fixed bg-nav fixed-top w-100">
+  <div class="container-fluid">
+    <a routerLink="/mainpage" class="navbar-brand">
+      <img
+        class="rounded-circle"
+        src="./assets/images/new/logo-light.png"
+        width="100px"
+        alt="logo of cooker "
+      />
+      <b class="logo-nav">{{ "navbar.Chefs Training Academy" | translate }}</b>
+    </a>
+    <button
+      class="navbar-toggler btn-nav"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-between align-items-center"
+      id="navbarSupportedContent"
+    >
+      <ul
+        class="navbar-nav mb-2 mb-lg-0 justify-content-between w-100 align-items-center"
+      >
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="mainpage"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "navbar.Home" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="allcategories"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "main-nav.Categories" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="allareas"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "main-nav.Areas" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="allingradiants"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "main-nav.Ingredients" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="invoice"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "main-nav.Invoice" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item form-check form-switch">
+          <a class="nav-link">
+            <input
+              #mood
+              (change)="changeMood($event)"
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckChecked"
+            />
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {{ "navbar.lang" | translate }}
+          </a>
+          <ul class="dropdown-menu">
+            <li
+              (click)="closeIteamModal()"
+              [class.bg-primary-subtle]="_TranslateService.currentLang == 'en'"
+              (click)="changeLang('en')"
+            >
+              <a class="dropdown-item cr">{{ "navbar.english" | translate }}</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li
+              (click)="closeIteamModal()"
+              [class.bg-primary-subtle]="_TranslateService.currentLang == 'ar'"
+              (click)="changeLang('ar')"
+            >
+              <a class="dropdown-item cr">{{ "navbar.arabic" | translate }}</a>
+            </li>
+          </ul>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a class="nav-link"><i class="fs-5 fa-brands fa-facebook"></i></a>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a class="nav-link"><i class="fs-5 fa-brands fa-instagram"></i></a>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a class="nav-link"><i class="fs-5 fa-brands fa-linkedin"></i></a>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a class="nav-link"><i class="fs-5 fa-brands fa-whatsapp"></i></a>
+        </li>
+        <li
+          (click)="closeIteamModal()"
+          class="nav-item navbar-nav model margin-b"
+        >
+          <!-- Button trigger modal -->
+          <input
+            readonly
+            type="search"
+            name="sarchmeal"
+            class="form-control cr"
+            placeholder="{{ 'main-nav.search' | translate }}..............."
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          />
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content modal-bg">
+                <div
+                  class="d-flex justify-content-between align-items-center w-100 p-3 modalfooter-bg p-3 border-bottom border-secondary-subtle rounded-2"
+                >
+                  <h2 class="modal-title sec-color" id="exampleModalLabel">
+                    {{ "main-nav.search" | translate }}
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <input
+                    id="sarchInner"
+                    (keyup)="search($event)"
+                    type="search"
+                    class="form-control cr"
+                    placeholder="{{
+                      'navbar.Search By Meal Name' | translate
+                    }}..............."
+                  />
+
+                  <section class="py-2 text-center">
+                    <div class="title py-3"></div>
+                    <div class="content container-fluid">
+                      <div class="row g-4">
+                        @for (iteam of allSearchData; track $index) {
+                        <div
+                          [routerLink]="['/details', iteam.idMeal]"
+                          (click)="hidemodal()"
+                          class="col-6 col-lg-4 col-xl-3"
+                        >
+                          <div
+                            class="rounded border border-danger-subtle p-3 bg-main shadow h-100"
+                          >
+                            <img
+                              src="{{ iteam.strMealThumb }}"
+                              class="w-100 rounded"
+                              alt="{{ iteam.strMeal }}"
+                            />
+
+                            <h3 class="h4 sec-color my-2">
+                              {{ iteam.strMeal }}
+                            </h3>
+                          </div>
+                        </div>
+                        }
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="modal-footer modalfooter-bg">
+                  <p class="sec-color">
+                    {{ "home.Chefs Training Academy" | translate }}....
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a (click)="_AuthenService.logout()">
+            <button
+              type="button"
+              class="nav-item text-red bg-danger-subtle border border-danger rounded-2 text-center px-2 py-1"
+            >
+              {{ "main-nav.Signout" | translate }}
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

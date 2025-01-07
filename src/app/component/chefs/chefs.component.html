@@ -1,0 +1,236 @@
+<div class="py-5">
+  <section class="chefs container py-5">
+    <div class="title text-center py-3">
+      <h2 class="pt-5 sec-color text-decoration-underline">
+        {{ "chefs.Our Chefs" | translate }}
+      </h2>
+      <p class="main-color fs-5">
+        {{ "chefs.(Round the Globe)" | translate }}
+      </p>
+    </div>
+    <owl-carousel-o [options]="chefs">
+      <ng-template carouselSlide>
+        <div class="px-3 height">
+          <div class="card rounded-5 overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img
+                width="300px"
+                height="400px"
+                src="./assets/images/chefs/chefs (1).jpg"
+                class="card-img-top"
+                alt="William Anderson image"
+              />
+              <div
+                class="social-layer span-h3 position-absolute top-0 d-flex flex-column p-2 rounded"
+              >
+                <i class="my-3 fs-5 fa-brands fa-facebook"></i>
+                <i class="my-3 fs-5 fa-brands fa-instagram"></i>
+                <i class="my-3 fs-5 fa-brands fa-linkedin"></i>
+              </div>
+              <div
+                class="position-absolute bottom-0 start-0 span-h3 w-100 text-center"
+              >
+                {{ "chefs.William Anderson" | translate }}
+              </div>
+            </div>
+            <div class="card-body" [class.text-start]="LangText()">
+              <h5 class="sec-color-main">{{ "chefs.Vegan" | translate }}</h5>
+              <p class="card-text">
+                {{
+                  "chefs.Some quick example text to build on the card title and make up the bulk of the card's content."
+                    | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="px-3 height">
+          <div class="card rounded-5 overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img
+                width="300px"
+                height="400px"
+                src="./assets/images/chefs/chefs (2).jpg"
+                class="card-img-top"
+                alt="Alexander Lamb image"
+              />
+              <div
+                class="social-layer span-h3 position-absolute top-0 d-flex flex-column p-2 rounded"
+              >
+                <i class="my-3 fs-5 fa-brands fa-facebook"></i>
+                <i class="my-3 fs-5 fa-brands fa-instagram"></i>
+                <i class="my-3 fs-5 fa-brands fa-linkedin"></i>
+              </div>
+              <div
+                class="position-absolute bottom-0 start-0 span-h3 w-100 text-center"
+              >
+                {{ "chefs.Alexander Lamb" | translate }}
+              </div>
+            </div>
+            <div class="card-body" [class.text-start]="LangText()">
+              <h5 class="sec-color-main">
+                {{ "chefs.Interntional Cuisine" | translate }}
+              </h5>
+              <p class="card-text">
+                {{
+                  "chefs.Some quick example text to build on the card title and make up the bulk of the card's content."
+                    | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="px-3 height">
+          <div class="card rounded-5 overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img
+                width="300px"
+                height="400px"
+                src="./assets/images/chefs/chefs (3).jpg"
+                class="card-img-top"
+                alt="Susie Perez image"
+              />
+              <div
+                class="social-layer span-h3 position-absolute top-0 d-flex flex-column p-2 rounded"
+              >
+                <i class="my-3 fs-5 fa-brands fa-facebook"></i>
+                <i class="my-3 fs-5 fa-brands fa-instagram"></i>
+                <i class="my-3 fs-5 fa-brands fa-linkedin"></i>
+              </div>
+              <div
+                class="position-absolute bottom-0 start-0 span-h3 w-100 text-center"
+              >
+                {{ "chefs.Susie Perez" | translate }}
+              </div>
+            </div>
+            <div class="card-body" [class.text-start]="LangText()">
+              <h5 class="sec-color-main">
+                {{ "chefs.French Deserts" | translate }}
+              </h5>
+              <p class="card-text">
+                {{
+                  "chefs.Some quick example text to build on the card title and make up the bulk of the card's content."
+                    | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="px-3 height">
+          <div class="card rounded-5 overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img
+                width="300px"
+                height="400px"
+                src="./assets/images/chefs/chefs (4).jpg"
+                class="card-img-top"
+                alt="Floyed Weaver"
+              />
+              <div
+                class="social-layer span-h3 position-absolute top-0 d-flex flex-column p-2 rounded"
+              >
+                <i class="my-3 fs-5 fa-brands fa-facebook"></i>
+                <i class="my-3 fs-5 fa-brands fa-instagram"></i>
+                <i class="my-3 fs-5 fa-brands fa-linkedin"></i>
+              </div>
+              <div
+                class="position-absolute bottom-0 start-0 span-h3 w-100 text-center"
+              >
+                {{ "chefs.Floyed Weaver" | translate }}
+              </div>
+            </div>
+            <div class="card-body" [class.text-start]="LangText()">
+              <h5 class="sec-color-main">{{ "chefs.Seafood" | translate }}</h5>
+              <p class="card-text">
+                {{
+                  "chefs.Some quick example text to build on the card title and make up the bulk of the card's content."
+                    | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="px-3 height">
+          <div class="card rounded-5 overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img
+                width="300px"
+                height="400px"
+                src="./assets/images/chefs/chefs (5).jpg"
+                class="card-img-top"
+                alt="Walter White"
+              />
+              <div
+                class="social-layer span-h3 position-absolute top-0 d-flex flex-column p-2 rounded"
+              >
+                <i class="my-3 fs-5 fa-brands fa-facebook"></i>
+                <i class="my-3 fs-5 fa-brands fa-instagram"></i>
+                <i class="my-3 fs-5 fa-brands fa-linkedin"></i>
+              </div>
+              <div
+                class="position-absolute bottom-0 start-0 span-h3 w-100 text-center"
+              >
+                {{ "chefs.Walter White" | translate }}
+              </div>
+            </div>
+            <div class="card-body" [class.text-start]="LangText()">
+              <h5 class="sec-color-main">
+                {{ "chefs.Breakfast" | translate }}
+              </h5>
+              <p class="card-text">
+                {{
+                  "chefs.Some quick example text to build on the card title and make up the bulk of the card's content."
+                    | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="px-3 height">
+          <div class="card rounded-5 overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img
+                width="300px"
+                height="400px"
+                src="./assets/images/chefs/chefs (6).png"
+                class="card-img-top"
+                alt="Owen Bradley"
+              />
+              <div
+                class="social-layer span-h3 position-absolute top-0 d-flex flex-column p-2 rounded"
+              >
+                <i class="my-3 fs-5 fa-brands fa-facebook"></i>
+                <i class="my-3 fs-5 fa-brands fa-instagram"></i>
+                <i class="my-3 fs-5 fa-brands fa-linkedin"></i>
+              </div>
+              <div
+                class="position-absolute bottom-0 start-0 span-h3 w-100 text-center"
+              >
+                {{ "chefs.Owen Bradley" | translate }}
+              </div>
+            </div>
+            <div class="card-body" [class.text-start]="LangText()">
+              <h5 class="sec-color-main">{{ "chefs.Bakery" | translate }}</h5>
+              <p class="card-text">
+                {{
+                  "chefs.Some quick example text to build on the card title and make up the bulk of the card's content."
+                    | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </section>
+</div>

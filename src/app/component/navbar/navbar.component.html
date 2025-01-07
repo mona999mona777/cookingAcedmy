@@ -1,0 +1,144 @@
+<nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
+  <div class="container-fluid">
+    <a routerLink="/home" class="navbar-brand">
+      <img
+        class="rounded-circle"
+        src="./assets/images/new/logo-light.png"
+        width="100px"
+        alt="logo of cooker "
+      />
+      <b class="logo-nav">{{ "navbar.Chefs Training Academy" | translate }}</b>
+    </a>
+    <button
+      class="navbar-toggler btn-nav"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      #navbarSupportedContent
+      class="collapse navbar-collapse justify-content-between align-items-center"
+      id="navbarSupportedContent"
+    >
+      <ul
+        class="navbar-nav mb-2 mb-lg-0 justify-content-between w-100 align-items-center"
+      >
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="/home"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "navbar.Home" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="/chefs"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "navbar.Chefs" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="/achivements"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "navbar.Achivements" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="/testmonials"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "navbar.Testmonials" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="/DiplopmaDates"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "navbar.DiplopmaDates" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item form-check form-switch">
+          <a class="nav-link">
+            <input
+              #mood
+              (change)="changeMood($event)"
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckChecked"
+            />
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {{ "navbar.lang" | translate }}
+          </a>
+          <ul class="dropdown-menu">
+            <li
+              (click)="closeIteamModal()"
+              [class.bg-primary-subtle]="_TranslateService.currentLang == 'en'"
+              (click)="changeLang('en')"
+            >
+              <a class="dropdown-item cr">{{ "navbar.english" | translate }}</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li
+              (click)="closeIteamModal()"
+              [class.bg-primary-subtle]="_TranslateService.currentLang == 'ar'"
+              (click)="changeLang('ar')"
+            >
+              <a class="dropdown-item cr">{{ "navbar.arabic" | translate }}</a>
+            </li>
+          </ul>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a class="nav-link"><i class="fs-5 fa-brands fa-facebook"></i></a>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a class="nav-link"><i class="fs-5 fa-brands fa-instagram"></i></a>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a class="nav-link"><i class="fs-5 fa-brands fa-linkedin"></i></a>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a class="nav-link"><i class="fs-5 fa-brands fa-whatsapp"></i></a>
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="/enroll"
+            routerLinkActive="btn-active"
+            class="nav-link yellow"
+            >{{ "navbar.EnrollNow" | translate }}</a
+          >
+        </li>
+        <li (click)="closeIteamModal()" class="nav-item">
+          <a
+            routerLink="/allorders"
+            routerLinkActive="btn-active"
+            class="nav-link"
+            >{{ "navbar.Login" | translate }}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

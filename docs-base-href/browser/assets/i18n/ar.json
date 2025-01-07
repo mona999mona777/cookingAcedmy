@@ -1,0 +1,186 @@
+{
+    "navbar":{
+        "Chefs Training Academy":" أكاديمية تدريب الطهاه " ,
+        "Home":"الرئيسية",
+        "Chefs":"الطهاه",
+        "Achivements":"الإنجازات",
+        "Testmonials":"آراء العملاء ",
+        "DiplopmaDates":"مواعيد الدبلومات ",
+        "EnrollNow":"سجل الان",
+        "Login":"تسجيل الدخول ",
+        "lang":"اللغة",
+        "arabic":"العربية",
+        "english":"الإنجليزية",
+        "Search By Meal Name":"البحث  بإستخدتم اسم الوصفة "
+    },
+    "main-nav":{
+        "Categories":"الأقسام",
+        "Areas":"المناطق",
+        "Ingredients":"المكونات",
+        "Invoice":"الفاتورة",
+        "search":" بحث",
+        "Signout":"تسجيل الخروج"
+    },
+    "home":{
+        "Chefs Training Academy":" أكاديمية تدريب الطهاه " ,
+        "Next Cooking Class Starts After:":"تبدأ دبلومة الطهي التالية بعد: ",
+        "Day":"يوم",
+        "Hour":"ساعة",
+        "Mint":"دقيقة",
+        "Sec":"ثانية",
+        "Main Goal":"هدفنا الرئيسي ",
+        "We all want to learn the art of cooking for different reasons ( showing love through a delicious home-cooked meal for all our loved ones!!, Learning as a relaxing hobby alongside the work we love!!, Also our passion for cooking can be our own source of income and that's great if your passion is your job. and many different and special reasons each of us has his own reason .... That's why we present to you this diploma prepared by world cooking experts you can watch the description and also instead of stopping the video to write the ingredients or take a screenshot of it it is now written for you (the ingredients and the method) so let's start this professional adventure. Good luck to all )...."
+        :
+        "جميعنا نريد تعلم فن الطبخ لأسباب مختلفة (إظهار الحب من خلال وجبة منزلية لذيذة لجميع أحبائنا!!، التعلم كهواية مريحة إلى جانب العمل الذي نحبه!!، كما أن شغفنا بالطبخ يمكن أن يكون مصدر دخل خاص بنا وهذا رائع إذا كان شغفك هو عملك. والعديد من الأسباب المختلفة والخاصة لكل منا سببه الخاص .... ولهذا السبب نقدم لك هذه الدبلومة التي أعدها خبراء الطبخ العالميون يمكنك مشاهدة الوصف وأيضًا بدلاً من إيقاف الفيديو لكتابة المكونات أو التقاط لقطة شاشة منه فهو الآن مكتوب لك (المكونات والطريقة) فلنبدأ هذه المغامرة المهنية. حظا سعيدا للجميع). ....",
+        "so let`s get started":"فلنبدأ إذن",
+       
+        "Exam Date After":"يتبقي لميعاد الامتحان ",
+        "Wish You Good Luck":"مع أمنيتنا بدوام التوفيق"
+    },
+    "chefs":{
+        "Our Chefs":"الطهاه لدينا ",
+        "(Round the Globe)":"(من جميع انحاء العالم)",
+        "Some quick example text to build on the card title and make up the bulk of the card's content.":" نقدم اليكم  وجبات شهية من خبراء الطهي ",
+        "William Anderson":"وليام أندرسون",
+        "Vegan":"مأكولات نباتية",
+        "Alexander Lamb":"ألكسندر لمب",
+        "Interntional Cuisine":"مأكولات  المطابخ العالمية",
+        "Susie Perez":"سوزي بيريز",
+        "French Deserts":"حلويات فرنسية",
+        "Floyed Weaver":"فلويد ويفر",
+        "Seafood":"مأكولات بحرية" ,
+        "Walter White":"ويلتر وايت",
+        "Breakfast":"وجبات الافطار اللذيذة ",
+        "Owen Bradley":"أوين برادلي",
+        "Bakery":"المخبوزات العالمية"
+    },
+    "achive":{
+            "Our Achievements":"إنجازاتنا",
+            "Salami corned beef short loin sausage meatloaf fatback andouille kielbasa frankfurter sirloin alcatra beef ribs.":".نحن من اقدم  أكادميات الطهي  حيث ان وجودنا بالمجال منذ أكثر من 40 عام",
+            "We Are Winners of 50 Competitions.":"لقد فزنا في  خمسين مسابقة للطهي ",
+            "27 Professional Chefs-Trainers.":" لدينا سبعة وعشرون طاهي محترف لاعداد طلابنا " ,
+            "Guaranteed Fast Employment.": "خريجونا سريعي التوظيف"      
+    },
+    "test":{
+            "Testimonials":"آراء العملاء",
+            "(Reviews Of Our Students)":"تقيمات طلابنا",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatur! Unde, soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatusolut.":
+"من المهم جدا التأكيد علي مدي ضرورة وجود كل الوصفات الدقيقة اللذيدة معلومة المصدر في مكان واحد كما إنها تعد من أقدم دبلومات الطهي في مصر وخريجوها يحصلوا علي شهاده معتمده في الطهي سواء من الناحيه العمليه لأفتتاح مشاريعهم الخاصة او لاعداد أشهي الوجبات المنزليه للاسرة" 
+    },
+    "diploma":{
+        "Diploma Dates 2025":"",
+        "First":"الأولي",
+        "second": "الثانية",
+        "Third":"الثالثة" ,
+        "Fourt":"الرابعة",
+
+        "Start":"البداية",
+        "Duration":"المدة" ,
+        "2 months": " شهرين" ,
+        "Exam Date": "ميعاد الأمتحان",
+
+
+        "1 january,2025":"1 يناير 2025",
+        "1 march,2025":"1 مارس 2025",
+
+        "1 April,2025": "1 إبريل 2025",
+        "1 June,2025":" 1 يونيو 2025",
+
+        "1 July,2025":"1 يوليو 22025",
+        "1 september,2025":"1 سبتمبر 2025",
+
+        "1 October,2025":"1 أكنوبر 2025",
+        "1 December,2025":"1 ديسمبر"
+    },
+    "enroll":{
+        "Terms And Conditions Of Enrollment":"شروط وأحكام التسجيل",
+        "The duration of the diploma is two months from the date of the diploma start and not from the date of reservation, as the diploma dates are fixed and do not change from one person to another according to the reservation date":"مدة الدبلوم شهرين من تاريخ بدء الدبلوم وليس من تاريخ الحجز حيث أن مواعيد الدبلوم ثابتة ولا تتغير من شخص لآخر حسب تاريخ الحجز",
+        "Upon reservation, the examinee will be notified of the exam date, provided that the exam is not connected to the Internet": "عند الحجز سيتم إبلاغ المتقدم بموعد الامتحان بشرط ألا يكون الامتحان متصلاً بالإنترنت",
+        "The examinee must obtain 80% of the exam mark and the examinee will receive an accredited certificate": "يجب على المتقدم للامتحان الحصول على 80% من علامة الامتحان ويحصل المتقدم للامتحان على شهادة معتمدة",
+        "This diploma is intended for mothers and fathers, working women, or students who do not have enough time to attend": " هذه الدبلومة مخصصة للأمهات والآباء والنساء العاملات والطلاب الذين ليس لديهم الوقت الكافي للحضور",
+        "The Student is not entitled To a Refund Of Diploma Amount After Booking":"لا يحق للطالب استرداد مبلغ الدبلومة بعد الحجز",
+        "Enroll Now":"سجل الأن",
+        "Full Name":"الأسم بالكامل ",
+        "email":"البريد الإلكتروني",
+        "password":"كلمة المرور",
+        "repassword":"تأكيد كلمة المرور " ,
+        "phone":"رقم التليفون" ,
+        "register":"متابعة"
+    },
+    "login":{
+        "login Now":"تسجيل الدخول",    
+        "login":"دخول",
+        "forget password ?":"هل نسيت كلمة المرور ؟",
+        "You are not a subscriber.the payment process has not been completed":"أنت غير مشترك. عملية الدفع لم تكتمل بعد."
+    },
+    "exam":{
+        "city":"إسم المدينة",
+          "confirm":"متابعة",
+          "Select City Exam":"أختر مدينة إمتحانك"
+    },
+   
+    "invoice":{
+        "your invoice":"فتورتك",
+            "User Name":"اسم العميل ",
+            "User Email":"إيميل العميل ",
+            "User phone":"رقم تليفون العميل ",
+            "User city":"مدينة الامتحان",
+            "User id":"رقم العميل ",
+            "date":"تاريخ الدقع",
+            "payment status":"هل تم الدفع؟",
+            "Payment Method":"نوع عمليه الدفع",
+            "Order Id":"رقم الفاتورة",
+            "price":"المبلغ",
+            "wish you luck":"مع تمنياتنا بالتوفيق",
+            "EPG":"جنية"
+    },
+    "footer":{
+            "get in touch":"للتواصل معنا .",
+            "Our Cooking School features a long and proud history of more than 100 years. Founded at the end of the XIXth century.":"  تتمتع أكاديميتنا للطهي بتاريخ طويل وفخور يمتد لأكثر من 100 عام . تأسست في نهاية القرن التاسع عشر .",
+            "Enter Email here to be updated. We promise not to send you spam!":"أدخل بريدك الإلكتروني هنا للحصول علي التحديثات.",
+            "Payment partners":"طرق الدفع  ",
+            "Get Deliveries":"أحصل علي التطبيق",
+            "Chefs Training Academy":"أكاديمية تدريب الطهاه.",
+            "828 Al Hosary Street , New Alamein, Egypt":"28 ش الحصري العالمين الجديده , مصر ",
+            "+8 (800) 238 3597 (admin)":"+8 (800) 238 3597",
+            "developed by":"تم برمجتة بواسطة ",
+            "Mariam Yasser":"مريم ياسر",
+            "Subscribe":"إرسال",
+            "Send Your E-mail":"البريد الإلكتروني"
+    },
+    "formprag":{
+        "name is required":"أدخل الأسم",
+        "name should be more or equal tha 3 chars":"  3 أحرف علي الأقل",
+        "name should be less or equal tha 20 chars":"20 حرف علي الأكثر  ",
+
+        "email is required":"البريد الإلكتروني مطلوب ",
+        "enter valid email":"البريد الإلكتروني غير صحيح",
+
+        "password is required":"أدخل كلمة المرور",
+        "enter valid password":" أدخل  كلمة مرور صحيحة",
+
+        "password confirmation is incorrect":"كلمة المرور غير متطابقة",
+        "phone is required":"أدخل رقم التليفون (بإستخدام اللغة الإنجليزية)",
+        "enter valid phone":" أدخل رقم تليفون صحيح",
+
+        "city is required":"أدخل أسم المدينة"
+
+        
+    },
+    "notfound":{
+        "Sorry, this page isn't available":"عذراّّ هذه الصفحة غير متاحة الان.",
+        "This link you follow may be broken, or the page may have been removed":"قد تكون تمت ازالتها او حذفت",
+        "go back to the previous page":"الرجوع الي الصفحة السابقة",
+        "Visit Our Help Center":"زور مركز المساعدة للتوصيح اكثر."
+    },
+    "forget":{
+  "forget password":"نسيت كلمة المرور",
+  "send":"إرسال",
+  "verify Code":"كود التأكيد",
+  "reset code":"إدخل كود التأكيد المرسل",
+  "reset code is required":"كود التأكيد مطلوب",
+  "Enter valid Reset Code":"كود التأكيد غبر صحيح",
+"reset new password":"تعين كلمة سر جديدة",
+  "new password":"كلمة السر الجديدة"
+    }
+    }
