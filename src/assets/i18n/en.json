@@ -72,7 +72,7 @@
 
 
             "1 january,2025":"1 january,2025",
-            "1 march,2025":"1 march,2025",
+            "1 march,2025":"5 march,2025",
 
             "1 April,2025": "1 April,2025",
             "1 June,2025":"1 June,2025",
@@ -81,7 +81,12 @@
             "1 september,2025":"1 September,2025",
 
             "1 October,2025":"1 October,2025",
-            "1 December,2025":"1 December,2025"
+            "1 December,2025":"1 December,2025",
+
+            "Eid Mubarak":"Eid Mubarak",
+            "Ramdan Karim":"Ramdan Karim",
+            "5% Discount on Eid Al-Fitr":"5% Discount on Eid Al-Fitr",
+            "Registeration Deadline Has Ended":"Registeration Deadline Has Ended"
     },
     "enroll":{
         "Terms And Conditions Of Enrollment":"Terms And Conditions Of Enrollment",

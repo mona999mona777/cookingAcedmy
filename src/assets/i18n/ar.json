@@ -11,7 +11,7 @@
         "lang":"اللغة",
         "arabic":"العربية",
         "english":"الإنجليزية",
-        "Search By Meal Name":"البحث  بإستخدتم اسم الوصفة "
+        "Search By Meal Name":"البحث بإستخدام اسم الوصفة "
     },
     "main-nav":{
         "Categories":"الأقسام",
@@ -90,8 +90,13 @@
         "1 september,2025":"1 سبتمبر 2025",
 
         "1 October,2025":"1 أكنوبر 2025",
-        "1 December,2025":"1 ديسمبر"
-    },
+        "1 December,2025":"1 ديسمبر",
+
+        "Eid Mubarak":"عيد مبارك",
+        "Ramdan Karim":"رمضان كريم",
+        "5% Discount on Eid Al-Fitr":"خصم 5% بمناسبة عيد الفطر",
+        "Registeration Deadline Has Ended":"انتهت مدة التسجيل "
+},
     "enroll":{
         "Terms And Conditions Of Enrollment":"شروط وأحكام التسجيل",
         "The duration of the diploma is two months from the date of the diploma start and not from the date of reservation, as the diploma dates are fixed and do not change from one person to another according to the reservation date":"مدة الدبلوم شهرين من تاريخ بدء الدبلوم وليس من تاريخ الحجز حيث أن مواعيد الدبلوم ثابتة ولا تتغير من شخص لآخر حسب تاريخ الحجز",

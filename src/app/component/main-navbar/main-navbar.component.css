@@ -1,0 +1,81 @@
+.social,
+.nav-link {
+  -webkit-transition: unset !important;
+  -o-transition: unset !important;
+  transition: unset !important;
+  color: var(--color-light) !important;
+}
+.yellow {
+  color: var(--yellow) !important;
+}
+.toogle-icon {
+  -webkit-transition: unset !important;
+  -o-transition: unset !important;
+  transition: unset !important;
+}
+.navbar-brand {
+  -webkit-transition: unset !important;
+  -o-transition: unset !important;
+  transition: unset !important;
+}
+.modal-search-open {
+  display: block;
+}
+
+.comp-search-open {
+  display: none;
+}
+@media (max-width: 768px) {
+  .logo-nav {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .nav-link {
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .width-img {
+    width: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .logo-nav {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .width-img {
+    width: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .logo-nav {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .width-img {
+    width: 60px;
+  }
+  .nav-link {
+    font-weight: 300;
+    font-size: 10px;
+  }
+  .modal-search-open {
+    display: none;
+  }
+  .comp-search-open {
+    display: block;
+  }
+}
+@media (min-width: 1300px) {
+  .logo-nav {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .width-img {
+    width: 70px;
+  }
+  .nav-link {
+    font-weight: 500;
+    font-size: 15px;
+  }
+}

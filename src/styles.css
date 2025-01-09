@@ -19,6 +19,7 @@
   --white: white;
   --footer-header-modal: rgb(236, 152, 172);
   --btn-navs: rgba(147, 200, 235, 0.5);
+  --constant-color: rgba(31, 49, 62);
 }
 body {
   font-family: var(--font-family) !important;
@@ -37,6 +38,11 @@ body {
 }
 .btn-nav {
   background-color: var(--btn-navs);
+}
+.navbar-toggler,
+.form-check-input {
+  box-shadow: none !important;
+  border: none !important;
 }
 .modal-bg {
   background-image: -webkit-gradient(
@@ -81,28 +87,14 @@ body {
   font-weight: 500;
   font-size: 20px;
 }
-.navbar-brand {
-  -webkit-transition: unset !important;
-  -o-transition: unset !important;
-  transition: unset !important;
-  color: var(--color-light) !important;
-  font-weight: 500;
-  font-size: 20px;
-}
-.social,
-.nav-link {
-  -webkit-transition: unset !important;
-  -o-transition: unset !important;
-  transition: unset !important;
-  color: var(--color-light) !important;
-  font-weight: 500;
-  font-size: 15px;
-}
 .yellow {
   color: var(--yellow) !important;
 }
 .danger {
   color: var(--danger) !important;
+}
+.button-off {
+  color: var(--constant-color);
 }
 h2,
 .main-color {
@@ -289,6 +281,16 @@ a,
 .nav-item {
   cursor: pointer;
 }
+.dates {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.dates:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 /* btn */
 .btn-active {
   background-color: var(--btn-main);
@@ -343,10 +345,12 @@ body {
 }
 @media (max-width: 992px) {
   .margin-b {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
 .darkmood {
+  --constant-color: rgba(31, 49, 62);
   --body-bg: rgba(0, 0, 0, 0.6);
   --primary-glassy-bg: rgba(31, 49, 62, 0.5);
   --navbar-bg: rgba(31, 49, 62, 0.8);

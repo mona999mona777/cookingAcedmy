@@ -1,31 +1,41 @@
-.home-content {
-  width: 75%;
-}
-h1 {
-  font-weight: 500;
-  font-size: 25px;
-}
-h2 {
-  font-weight: 500;
-  font-size: 25px;
-}
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-}
-.wish-prag {
-  font-weight: 500;
-  font-size: 15px;
-}
-.col-3 span {
-  font-weight: 300;
-  font-size: 15px;
+@media (max-width: 550px) {
+  .home-content {
+    width: 90%;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .col-3 h6 {
+    font-weight: 300;
+    font-size: 13px;
+  }
 }
 /* media query */
-@media (min-width: 768px) {
+@media (min-width: 550px) {
   .home-content {
     width: 70%;
-    /* background-color: #fff; */
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 25px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .col-3 h6 {
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .home-content {
+    width: 50%;
   }
   h1 {
     font-weight: 700;
@@ -35,40 +45,7 @@ h3 {
     font-weight: 500;
     font-size: 25px;
   }
-  h3 {
-    font-weight: 500;
-    font-size: 25px;
-  }
-  .wish-prag {
-    font-weight: 500;
-    font-size: 20px;
-  }
-  .col-3 span {
-    font-weight: 300;
-    font-size: 20px;
-  }
-}
-@media (min-width: 995px) {
-  .home-content {
-    width: 50%;
-  }
-  h1 {
-    font-weight: 700;
-    font-size: 35px;
-  }
-  h2 {
-    font-weight: 500;
-    font-size: 40px;
-  }
-  h3 {
-    font-weight: 500;
-    font-size: 25px;
-  }
-  .wish-prag {
-    font-weight: 500;
-    font-size: 20px;
-  }
-  .col-3 span {
+  .col-3 h6 {
     font-weight: 300;
     font-size: 20px;
   }

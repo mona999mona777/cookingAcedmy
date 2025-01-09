@@ -1,5 +1,10 @@
 .login-form-content {
-  width: 75%;
+  width: 95%;
+}
+@media (min-width: 992px) {
+  .login-form-content {
+    width: 80%;
+  }
 }
 
 @media (min-width: 1200px) {

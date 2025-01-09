@@ -1,0 +1,14 @@
+.exam-content {
+  width: 95%;
+}
+@media (min-width: 992px) {
+  .exam-content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .exam-content {
+    width: 60%;
+  }
+}

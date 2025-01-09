@@ -145,6 +145,12 @@ export const routes: Routes = [
           import('./component/invoice/invoice.component').then((m) => m.InvoiceComponent),
         title: 'invoice',
       },
+      {
+        path: 'search',
+        loadComponent: () =>
+          import('./component/search/search.component').then((m) => m.SearchComponent),
+        title: 'search',
+      },
     ],
   },
   {
