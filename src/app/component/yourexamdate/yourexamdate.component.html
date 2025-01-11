@@ -83,8 +83,9 @@
         </div>
 
         <button
-          (click)="orderFunc()"
-          class="btn-main ms-auto d-block"
+          class="btn-main d-block"
+          [class.ms-auto]="LangText()"
+          [class.me-auto]="!LangText()"
           type="submit"
         >
           {{ "exam.confirm" | translate }} @if (isloading) {

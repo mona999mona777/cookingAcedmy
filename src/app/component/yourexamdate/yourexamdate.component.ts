@@ -1,8 +1,8 @@
-import { Component, inject, OnDestroy } from '@angular/core';
+import { Component, inject, OnDestroy, PLATFORM_ID } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { PaymentsService } from '../../core/services/payments.service';
-import { NgClass } from '@angular/common';
+import { isPlatformBrowser, NgClass } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -14,7 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class YourexamdateComponent implements  OnDestroy {
   private readonly _PaymentsService=inject(PaymentsService);
-  
+  private readonly _PLATFORM_ID=inject(PLATFORM_ID);
   isloading:boolean=false;
   messgsuc!:string;
   messgerr!:string;
@@ -43,7 +43,22 @@ export class YourexamdateComponent implements  OnDestroy {
       }
     }
   
-  
+  LangText(){
+  if (isPlatformBrowser(this._PLATFORM_ID)) {
+  if (localStorage.getItem("lang")!=null) {
+       if (localStorage.getItem("lang")=='en') {
+        return true;
+       }
+       else if (localStorage.getItem("lang")=='ar') {
+        return false;
+       }
+  } 
+  else if (localStorage.getItem("lang")==null) {
+               return true;            
+      } 
+  }
+        return false
+  }
     ngOnDestroy(): void {
         this.unsub?.unsubscribe()
     }
