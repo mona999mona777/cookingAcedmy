@@ -4,6 +4,7 @@
   -o-transition: unset !important;
   transition: unset !important;
   color: var(--color-light) !important;
+  cursor: pointer;
 }
 .yellow {
   color: var(--yellow) !important;
@@ -156,7 +157,7 @@
     display: none;
   }
   ::placeholder {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     color: cornflowerblue;
   }
