@@ -9,7 +9,7 @@
       <img
         class="rounded-circle width-img"
         src="./assets/images/new/logo-light.png"
-        alt="logo of cooker "
+        alt="logo of cooker"
       />
       <h2>
         <b class="logo-nav">{{
@@ -29,7 +29,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div
-      class="collapse navbar-collapse justify-content-between align-items-center"
+      #navbarSupportedContent
+      class="collapse navbar-collapse justify-content-between align-items-center px-5"
       id="navbarSupportedContent"
     >
       <ul
@@ -116,17 +117,21 @@
             </li>
           </ul>
         </li>
-        <li (click)="closeIteamModal()" class="social text-center mx-1">
-          <a><i class="fs-6 fa-brands fa-facebook"></i></a>
-        </li>
-        <li (click)="closeIteamModal()" class="social text-center mx-1">
-          <a><i class="fs-6 fa-brands fa-instagram"></i></a>
-        </li>
-        <li (click)="closeIteamModal()" class="social text-center mx-1">
-          <a><i class="fs-6 fa-brands fa-linkedin"></i></a>
-        </li>
-        <li (click)="closeIteamModal()" class="social text-center mx-1">
-          <a><i class="fs-6 fa-brands fa-whatsapp"></i></a>
+        <li class="nav-item">
+          <ul class="nav-link d-flex align-items-center">
+            <li (click)="closeIteamModal()" class="social mx-2">
+              <i class="fs-6 fa-brands fa-facebook"></i>
+            </li>
+            <li (click)="closeIteamModal()" class="social mx-2">
+              <i class="fs-6 fa-brands fa-instagram"></i>
+            </li>
+            <li (click)="closeIteamModal()" class="social mx-2">
+              <i class="fs-6 fa-brands fa-linkedin"></i>
+            </li>
+            <li (click)="closeIteamModal()" class="social mx-2">
+              <i class="fs-6 fa-brands fa-whatsapp"></i>
+            </li>
+          </ul>
         </li>
         <li
           (click)="closeIteamModal()"
@@ -137,24 +142,36 @@
             readonly
             type="search"
             name="sarchmeal"
-            class="form-control cr"
-            placeholder="{{ 'main-nav.search' | translate }}..............."
+            class="form-control cr placehold"
+            placeholder="{{ 'navbar.Search By Meal Name' | translate }}...."
           />
         </li>
         <li
           (click)="closeIteamModal()"
-          class="nav-item margin-b comp-search-open"
+          class="nav-item margin-b position-relative nav-iteames"
         >
           <!-- Button trigger modal -->
           <input
             readonly
             type="search"
             name="sarchmeal"
-            class="form-control cr"
-            placeholder="{{ 'main-nav.search' | translate }}..............."
+            class="form-control cr comp-search-open placehold"
+            placeholder="{{ 'navbar.Search By Meal Name' | translate }}...."
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           />
+          <span
+            class="fs-6 social icon-search-open"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <button
+            type="button"
+            class="btn-word border border-primary-subtle rounded-2 p-1"
+          >
+            {{ "navbar.Search By Meal Name" | translate }}
+          </button>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -169,7 +186,7 @@
                   class="d-flex justify-content-between align-items-center w-100 p-3 modalfooter-bg p-3 border-bottom border-secondary-subtle rounded-2"
                 >
                   <h2 class="modal-title sec-color" id="exampleModalLabel">
-                    {{ "main-nav.search" | translate }}
+                    {{ "navbar.Search By Meal Name" | translate }}
                   </h2>
                   <button
                     type="button"
@@ -230,9 +247,9 @@
         <li
           (click)="closeIteamModal()"
           (click)="_AuthenService.logout()"
-          class="text-red bg-danger-subtle rounded-2 text-center mav-item border border-danger-subtle py-1 mx-2"
+          class="nav-item text-center border border-danger-subtle text-red bg-danger-subtle rounded-2 p-2 mx-2"
         >
-          <h6>{{ "main-nav.Signout" | translate }}</h6>
+          {{ "main-nav.logout" | translate }}
         </li>
       </ul>
     </div>

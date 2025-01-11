@@ -18,8 +18,7 @@
         "Areas":"المناطق",
         "Ingredients":"المكونات",
         "Invoice":"الفاتورة",
-        "search":" بحث",
-        "Signout":"تسجيل الخروج"
+        "logout":"تسجيل الخروج"
     },
     "home":{
         "Chefs Training Academy":" أكاديمية تدريب الطهاه " ,

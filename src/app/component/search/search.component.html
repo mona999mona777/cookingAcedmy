@@ -1,5 +1,5 @@
 <section class="py-5">
-  <div class="pt-5 mt-5 container-fluid">
+  <div class="container-fluid">
     <input
       id="sarchInner"
       (keyup)="search($event)"
@@ -9,7 +9,7 @@
         'navbar.Search By Meal Name' | translate
       }}..............."
     />
-    <section class="py-2 text-center">
+    <section class="py-1 text-center">
       <div class="title py-3"></div>
       <div class="content container-fluid">
         <div class="row g-4">
@@ -17,7 +17,7 @@
           <div
             [routerLink]="['/details', iteam.idMeal]"
             (click)="hidemodal()"
-            class="col-md-6 col-lg-3 col-xl-2"
+            class="col-sm-6 col-lg-3 col-xl-2"
           >
             <div
               class="rounded border border-danger-subtle p-3 bg-main shadow h-100"

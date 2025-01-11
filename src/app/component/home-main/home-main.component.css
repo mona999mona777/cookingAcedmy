@@ -32,6 +32,14 @@
     font-weight: 300;
     font-size: 16px;
   }
+  .bg-main-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wordy {
+    padding-inline: 10px;
+  }
 }
 @media (min-width: 992px) {
   .home-content {

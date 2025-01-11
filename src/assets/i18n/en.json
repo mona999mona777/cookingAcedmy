@@ -119,8 +119,7 @@
         "Areas":"Areas",
         "Ingredients":"Ingredients",
         "Invoice":"Invoice",
-        "search":"search",
-        "Signout":"Signout"
+        "logout":"Logout"
     },
     "invoice":{
         "your invoice":"your invoice",
