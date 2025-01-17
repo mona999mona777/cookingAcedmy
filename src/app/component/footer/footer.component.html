@@ -18,19 +18,33 @@
         }}
       </p>
       <div class="row">
-        <form
-          class="col-md-8 my-3 d-flex justify-content-center align-items-center gap-3"
-        >
-          <input
-            class="form-control w-75"
-            type="text"
-            name="contact-us"
-            placeholder="{{ 'footer.Send Your E-mail' | translate }}"
-          />
-          <button type="submit" class="btn-main">
-            {{ "footer.Subscribe" | translate }}
-          </button>
-        </form>
+        <div class="col-md-8 my-3">
+          <form [formGroup]="sentdata" (ngSubmit)="okfunc()">
+            <div class="d-flex align-items-center gap-2 text-nowrap">
+              <input
+                [ngClass]="{ 
+            'is-valid':!sentdata.get('email')?.errors && (sentdata.get('email')?.touched ||
+            sentdata.get('email')?.dirty),
+            'is-invalid':sentdata.get('email')?.errors && (sentdata.get('email')?.touched ||
+            sentdata.get('email')?.dirty),
+         }"
+                id="email"
+                type="email"
+                class="form-control"
+                formControlName="email"
+                placeholder="{{
+                  'footer.enter Your E-mail' | translate
+                }}..............
+            "
+              />
+              <button class="btn-main" type="submit">
+                {{ "forget.send" | translate }} @if (isloading) {
+                <span class="fas fa-spin fa-spinner"></span>
+                }
+              </button>
+            </div>
+          </form>
+        </div>
         <ul
           class="col-md-4 my-3 d-flex justify-content-center align-items-center"
         >
@@ -132,7 +146,6 @@
       </div>
     </div>
   </div>
-
   <div class="copy-write shadow text-center border-top py-3">
     <p>
       © {{ "footer.Chefs Training Academy" | translate }} |

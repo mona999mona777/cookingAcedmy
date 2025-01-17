@@ -323,19 +323,21 @@ a,
 }
 button,
 li,
-a,
-body {
+a {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
+}
+.social,
+.nav-link {
+  -webkit-transition: unset !important;
+  -o-transition: unset !important;
+  transition: unset !important;
 }
 /* media query */
 @media (min-width: 1300px) {
   .social,
   .nav-link {
-    -webkit-transition: unset !important;
-    -o-transition: unset !important;
-    transition: unset !important;
     font-weight: 500;
     font-size: 20px;
   }

@@ -143,12 +143,13 @@
         "Payment partners":"Payment partners",
         "Get Deliveries":"Get Deliveries",
         "828 Al Hosary Street , New Alamein, Egypt":"828 Al Hosary Street , New Alamein, Egypt",
-            "+8 (800) 238 3597 (admin)":"+8 (800) 238 3597",
+        "+8 (800) 238 3597 (admin)":"+8 (800) 238 3597",
         "Chefs Training Academy":"Chefs Training Academy",
         "developed by":"developed by",
         "Mariam Yasser":"Mariam Yasser",
         "Subscribe":"Subscribe",
-        "Send Your E-mail":"Send Your E-mail"
+        "Send Your E-mail":"Send Your E-mail",
+        "enter Your E-mail":"Enter Your E-mail"
     },
     "formprag":{
         "name is required":"name is required",

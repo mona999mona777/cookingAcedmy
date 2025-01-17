@@ -19,7 +19,6 @@ export function HttpLoaderFactory(http:HttpClient){
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes,withInMemoryScrolling({scrollPositionRestoration:'top'})),
      provideClientHydration(),provideHttpClient(withFetch(),withInterceptors([headerInterceptor,loadingScreenInterceptor,errorInterceptor])),provideAnimations(),
-     provideAnimations(),
      provideToastr(),
      importProvidersFrom(NgxSpinnerModule,
     //  بتاعة الترجمه ايلي فوق دي تشتغل functionعلشان ال
