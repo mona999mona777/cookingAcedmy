@@ -1,12 +1,13 @@
 @if (theOrder) {
 <div class="pt-5">
-  <section class="container w-75 mx-auto shadow my-5 p-5 rounded-5">
-    <h2 class="h2 sec-color text-decoration-underline">
+  <section
+    class="container mx-auto width-invoice my-5 border border-info bg-info-subtle rounded-5"
+  >
+    <h2 class="h2 text-info-emphasis border-bottom border-info py-3">
       {{ "invoice.your invoice" | translate }}
     </h2>
-
     <div
-      class="row product bg-warning-subtle shadow-lg my-3 align-items-center justify-content-center py-3 rounded"
+      class="row product my-3 align-items-center justify-content-center py-3"
     >
       <div class="row py-2">
         <div class="col-xl-6 mb-3">
@@ -16,7 +17,7 @@
             class="w-100 rounded-5"
           />
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 border-start border-info">
           <P>
             <span class="text-primary-emphasis"
               >{{ "invoice.User Name" | translate }}:</span

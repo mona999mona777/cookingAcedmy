@@ -176,13 +176,13 @@
       "Visit Our Help Center":"Visit Our Help Center"
   },
   "forget":{
-    "forget password":"forget password",
-"send":"send",
+    "forget password":"Forget password",
+"send":"Send",
 "verify Code":"verify Code",
-"reset code":"reset code",
-"reset code is required":"reset code is required",
+"reset code":"Reset code",
+"reset code is required":"Reset code is required",
 "Enter valid Reset Code":"Enter valid Reset Code",
-"reset new password":"reset new password",
+"reset new password":"Reset new password",
 "new password":"new password"
   },
   "details":{

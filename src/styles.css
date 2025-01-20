@@ -351,6 +351,9 @@ a {
     margin-top: 10px;
   }
 }
+::placeholder {
+  color: deeppink !important;
+}
 .darkmood {
   --constant-color: rgba(31, 49, 62);
   --body-bg: rgba(0, 0, 0, 0.6);

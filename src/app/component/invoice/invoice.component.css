@@ -1,0 +1,10 @@
+@media (max-width: 992px) {
+  .width-invoice {
+    width: 95%;
+  }
+}
+@media (min-width: 992px) {
+  .width-invoice {
+    width: 50%;
+  }
+}
