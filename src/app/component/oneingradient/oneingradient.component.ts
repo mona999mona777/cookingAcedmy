@@ -4,11 +4,12 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Ingrat } from '../../core/interfaces/ingrat';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-oneingradient',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,TranslateModule],
   templateUrl: './oneingradient.component.html',
   styleUrl: './oneingradient.component.css'
 })

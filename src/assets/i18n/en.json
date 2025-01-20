@@ -184,7 +184,20 @@
 "Enter valid Reset Code":"Enter valid Reset Code",
 "reset new password":"reset new password",
 "new password":"new password"
-  }
+  },
+  "details":{
+    "Instructions":"Instructions",
+    "Area":"Area",
+    "Category":"Category",
+    "Recipes":"Recipes",
+    "Vedio":"Vedio",
+    "youtube":"youtube"
+    },
+    "all":{
+      "Ingradient Name":"Ingradient Name",
+      "Category Name":"Category Name",
+      "Area Name":"Area Name"
     }
+}
 
 

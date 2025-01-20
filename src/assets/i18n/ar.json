@@ -15,7 +15,7 @@
     },
     "main-nav":{
         "Categories":"الأقسام",
-        "Areas":"المناطق",
+        "Areas":"المطبخ",
         "Ingredients":"المكونات",
         "Invoice":"الفاتورة",
         "logout":"تسجيل الخروج"
@@ -187,5 +187,18 @@
   "Enter valid Reset Code":"كود التأكيد غبر صحيح",
 "reset new password":"تعين كلمة سر جديدة",
   "new password":"كلمة السر الجديدة"
-    }
+    },
+    "details":{
+      "Instructions":"الخطوات والتعليمات",
+      "Area":"المطبخ",
+      "Category":"القسم",
+      "Recipes":"المقادير",
+      "Vedio":"الفيديو",
+      "youtube":"youtube"
+      },
+      "all":{
+        "Ingradient Name":"إسم المكون",
+        "Category Name":"قسم",
+        "Area Name":"المطبخ"
+      }
     }

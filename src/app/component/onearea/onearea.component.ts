@@ -4,11 +4,12 @@ import { AreassService } from '../../core/services/areass.service';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Subscription } from 'rxjs';
 import { Iarea } from '../../core/interfaces/area';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-onearea',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,TranslateModule],
   templateUrl: './onearea.component.html',
   styleUrl: './onearea.component.css'
 })

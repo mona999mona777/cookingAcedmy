@@ -1,3 +1,4 @@
+import { TranslateModule } from '@ngx-translate/core';
 import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { DetailsService } from '../../core/services/details.service';
 import { Subscription } from 'rxjs';
@@ -6,14 +7,13 @@ import { IDetails } from '../../core/interfaces/details';
 @Component({
   selector: 'app-detail-mael',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './detail-mael.component.html',
   styleUrl: './detail-mael.component.css'
 })
 export class DetailMaelComponent implements OnInit , OnDestroy {
 private readonly _DetailsService=inject(DetailsService);
 private readonly _ActivatedRoute=inject(ActivatedRoute); 
-
 mealdetails!:IDetails
 unsub!:Subscription;
 allIngredients!:string[]

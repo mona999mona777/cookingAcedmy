@@ -4,11 +4,12 @@ import { Subscription } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Icat } from '../../core/interfaces/allcat';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-onecategory',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,TranslateModule],
   templateUrl: './onecategory.component.html',
   styleUrl: './onecategory.component.css'
 })
