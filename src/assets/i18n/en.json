@@ -13,6 +13,14 @@
         "english":"En",
         "Search By Meal Name":"Search By Meal Name"
     },
+    "main-nav":{
+        "Categories":"Categories",
+        "Areas":"Areas",
+        "Ingredients":"Ingredients",
+        "Invoice":"Invoice",
+         "search":"Search",
+        "Signout":"Signout"
+    },
     "home":{
         "Chefs Training Academy":"Chefs Training Academy",
         "Next Cooking Class Starts After:":"Next Cooking Class Starts After:",
@@ -77,17 +85,14 @@
             "1 April,2025": "1 April,2025",
             "1 June,2025":"1 June,2025",
 
-            "1 July,2025":"1 July,2025",
             "1 september,2025":"1 September,2025",
 
             "1 October,2025":"1 October,2025",
-            "1 December,2025":"1 December,2025",
 
             "Eid Mubarak":"Eid Mubarak",
             "Ramdan Karim":"Ramdan Karim",
-            "5% Discount on Eid Al-Fitr":"5% Discount on Eid Al-Fitr",
-            "Registeration Deadline Has Ended":"Registeration Deadline Has Ended"
-    },
+            "4% Discount on Eid Al-Fitr":"4% Discount on Eid Al-Fitr",
+            "Registeration Deadline Has Ended":"Registeration Deadline Has Ended."    },
     "enroll":{
         "Terms And Conditions Of Enrollment":"Terms And Conditions Of Enrollment",
         "The duration of the diploma is two months from the date of the diploma start and not from the date of reservation, as the diploma dates are fixed and do not change from one person to another according to the reservation date":"The duration of the diploma is two months from the date of the diploma start and not from the date of reservation, as the diploma dates are fixed and do not change from one person to another according to the reservation date",
@@ -113,13 +118,6 @@
         "city":"city",
         "confirm":"confirm",
         "Select City Exam":"Select City Exam"
-    },
-    "main-nav":{
-        "Categories":"Categories",
-        "Areas":"Areas",
-        "Ingredients":"Ingredients",
-        "Invoice":"Invoice",
-        "logout":"Logout"
     },
     "invoice":{
         "your invoice":"your invoice",
@@ -168,14 +166,14 @@
         "enter valid phone":"enter valid phone",
 
         "city is required":"city is required"
-},
+    },
     "notfound":{
       "Sorry, this page isn't available":"Sorry, this page isn't available",
       "This link you follow may be broken, or the page may have been removed":"This link you follow may be broken, or the page may have been removed",
       "go back to the previous page":"go back to the previous page",
       "Visit Our Help Center":"Visit Our Help Center"
-  },
-  "forget":{
+    },
+    "forget":{
     "forget password":"Forget password",
 "send":"Send",
 "verify Code":"verify Code",
@@ -184,8 +182,8 @@
 "Enter valid Reset Code":"Enter valid Reset Code",
 "reset new password":"Reset new password",
 "new password":"new password"
-  },
-  "details":{
+    },
+    "details":{
     "Instructions":"Instructions",
     "Area":"Area",
     "Category":"Category",
@@ -199,5 +197,3 @@
       "Area Name":"Area Name"
     }
 }
-
-

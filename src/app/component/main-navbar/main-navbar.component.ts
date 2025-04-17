@@ -87,6 +87,22 @@ hidemodal(){
 $('#sarchInner').val('');
 $('#exampleModal').modal("hide");
 }
+LangText(){
+  if (isPlatformBrowser(this._PLATFORM_ID)) {
+  if (localStorage.getItem("lang")!=null) {
+       if (localStorage.getItem("lang")=='en') {
+        return true;
+       }
+       else if (localStorage.getItem("lang")=='ar') {
+        return false;
+       }
+  } 
+  else if (localStorage.getItem("lang")==null) {
+               return true;            
+      } 
+  }
+        return false
+  }
 ngOnDestroy(): void {
   this.unsub?.unsubscribe();
   this.unsubintsearch?.unsubscribe();

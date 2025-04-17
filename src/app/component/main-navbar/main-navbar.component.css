@@ -1,13 +1,16 @@
 .social,
-.nav-link {
+.nav-link,
+.form-check-input {
   -webkit-transition: unset !important;
   -o-transition: unset !important;
   transition: unset !important;
-  color: var(--color-light) !important;
-  cursor: pointer;
+  color: var(--nav-link) !important;
+}
+.btn-active {
+  color: var(--nav-linkactive) !important;
 }
 .yellow {
-  color: var(--yellow) !important;
+  color: rgb(250, 242, 94) !important;
 }
 .toogle-icon {
   -webkit-transition: unset !important;
@@ -42,10 +45,7 @@
 .nav-iteames:hover .btn-word {
   display: block;
 }
-/* .placehold {
-  box-shadow: none;
-  border: none;
-} */
+
 @media (max-width: 350px) {
   .logo-nav {
     font-size: 10px;
@@ -61,11 +61,6 @@
   .btn-nav {
     font-size: 5px;
   }
-  /* ::placeholder {
-    font-size: 10px;
-    font-weight: 500;
-    color: cornflowerblue;
-  } */
 }
 @media (min-width: 350px) {
   .logo-nav {
@@ -82,11 +77,6 @@
   .btn-nav {
     font-size: 10px;
   }
-  /* ::placeholder {
-    font-size: 18px;
-    font-weight: 500;
-    color: cornflowerblue;
-  } */
 }
 @media (min-width: 550px) {
   .logo-nav {
@@ -105,11 +95,6 @@
   .btn-nav {
     font-size: 15px;
   }
-  /* ::placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    color: cornflowerblue;
-  } */
 }
 @media (min-width: 992px) {
   .logo-nav {
@@ -156,11 +141,6 @@
   .icon-search-open {
     display: none;
   }
-  /* ::placeholder {
-    font-size: 12px;
-    font-weight: 500;
-    color: cornflowerblue;
-  } */
   .logo-nav {
     font-size: 22px;
     font-weight: 500;

@@ -49,7 +49,6 @@ this.unsubPay=this._PaymentsService.noCartItems().subscribe({
       localStorage.setItem("noOfCartItems",result.numOfCartItems);
       localStorage.setItem("TheRealToken",res.token);
        let noOfCartIteams=result.numOfCartItems;
-                      console.log("1=",noOfCartIteams)
                       this.messgerror="";
                       this.messsuccess=res.message; 
                       this.messnotsuccess=""; 
@@ -58,8 +57,6 @@ this.unsubPay=this._PaymentsService.noCartItems().subscribe({
                         }, 1000);
     }
     else if (result.numOfCartItems!==0) {
-      console.log("2=",result.numOfCartItems)
-      console.log("nooooo")
       this.messgerror="";
     this.messnotsuccess="correct"; 
       if(localStorage.getItem('lang')!=null){

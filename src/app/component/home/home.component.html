@@ -1,6 +1,6 @@
 <section class="home d-flex justify-content-center align-items-center">
   <div
-    class="container-fluid text-center home-content bg-main-glassy rounded-5 py-5 border border-danger-subtle"
+    class="container-fluid text-center home-content bg-maro rounded-5 py-5 border border-danger-subtle"
   >
     <div class="box-h1 rounded-5">
       <h1 class="mb-3 p-3">
@@ -8,7 +8,10 @@
       </h1>
     </div>
     <div>
-      <h2 class="mb-4 danger text-decoration-underline text-center">
+      <h2
+        routerLink="/DiplopmaDates"
+        class="my-4 text-light text-start text-decoration-underline"
+      >
         <b>{{ "home.Next Cooking Class Starts After:" | translate }}</b>
       </h2>
       <div class="row g-2">
@@ -46,12 +49,12 @@
         </div>
       </div>
       <p
-        class="text-primary-emphasis mt-4 wish-prag prag"
+        class="words mt-4 wish-prag"
         [class.text-end]="LangText()"
         [class.text-start]="!LangText()"
       >
         {{ "home.Wish You Good Luck" | translate }}
-        <i class="fa-solid fa-heart danger"></i>....
+        <i class="fa-solid fa-heart"></i>....
       </p>
     </div>
   </div>
@@ -83,7 +86,7 @@
             }}
           </p>
           <span
-            ><b class="danger"
+            ><b class="words"
               >{{ "home.so let`s get started" | translate }}
               <i class="fa-solid fa-heart"></i> .........</b
             ></span
@@ -94,7 +97,7 @@
         <img
           height="300px"
           class="rounded w-100 shadow-lg"
-          src="./assets/images/new/HOME6.png"
+          src="./assets/images/ava/889.avif"
           alt="our achievements image"
         />
       </div>

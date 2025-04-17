@@ -9,7 +9,7 @@
       <div class="row text-light">
         <div class="col-sm-6 col-lg-3 height-date mb-3">
           <div
-            class="bg-1 pb-5 rounded border border-white shadow-lg dates h-100 overflow-hidden cr"
+            class="bg-1 pb-5 rounded border border-secondary-subtle shadow-lg dates h-100 overflow-hidden cr"
           >
             <button
               type="button"
@@ -49,15 +49,31 @@
         </div>
         <div class="col-sm-6 col-lg-3 height-date mb-3">
           <div
-            routerLink="/enroll"
-            class="bg-2 pb-5 rounded border border-white shadow-lg dates h-100 overflow-hidden cr"
+            class="bg-2 pb-5 rounded border border-secondary-subtle shadow-lg dates h-100 overflow-hidden cr"
           >
             <button
               type="button"
-              class="mb-5 bg-warning rounded-2 w-100 text-light border border-danger py-1 fs-6"
+              class="bg-danger w-100 rounded-2 text-light border border-danger py-1 fs-6"
             >
-              {{ "diploma.5% Discount on Eid Al-Fitr" | translate }}
+              {{ "diploma.Registeration Deadline Has Ended" | translate }}
             </button>
+            <div class="pb-5 pt-1">
+              @if (LangText()) {
+              <button
+                type="button"
+                class="d-block me-auto bg-primary-subtle rounded-5 w-75 text-primary-emphasis border border-whtext-primary-emphasis shadow-lg py-1 fs-6"
+              >
+                4% Discount on Eid Al-Fitr.
+              </button>
+              } @if (!LangText()) {
+              <button
+                type="button"
+                class="d-block ms-auto bg-primary-subtle rounded-5 w-75 text-primary-emphasis border border-whtext-primary-emphasis shadow-lg py-1 fs-6"
+              >
+                4% خصم بمناسبة عبد الفطر المبارك.
+              </button>
+              }
+            </div>
             <h5 class="my-3">
               <span class="span-h3 px-1 py-5 rounded">{{
                 "diploma.second" | translate
@@ -91,18 +107,39 @@
         <div class="col-sm-6 col-lg-3 height-date mb-3">
           <div
             routerLink="/enroll"
-            class="bg-3 py-5 rounded border border-white shadow-lg dates h-100 overflow-hidden cr"
+            class="bg-3 pb-5 rounded border border-secondary-subtle shadow-lg dates h-100 overflow-hidden cr"
           >
+            @if (LangText()) {
+            <button
+              type="button"
+              class="mb-5 bg-success-subtle w-100 rounded-2 text-success border border-success-subtle py-1 fs-6"
+            >
+              Register Now !!
+            </button>
+            } @if (!LangText()) {
+            <button
+              type="button"
+              class="mb-5 bg-success-subtle w-100 rounded-2 text-success border border-success-subtle py-1 fs-6"
+            >
+              <span> سجل الان</span> !!
+            </button>
+            }
             <h5 class="my-3">
               <span class="span-h3 px-1 py-5 rounded">{{
                 "diploma.Third" | translate
               }}</span>
             </h5>
+            @if (LangText()) {
             <p>
               <span>{{ "diploma.Start" | translate }} : </span
-              ><i class="mx-1 fa-solid fa-calendar-days"></i
-              >{{ "diploma.1 July,2025" | translate }}
+              ><i class="mx-1 fa-solid fa-calendar-days"></i>1 July ,2025
             </p>
+            } @if (!LangText()) {
+            <p>
+              <span>{{ "diploma.Start" | translate }} : </span
+              ><i class="mx-1 fa-solid fa-calendar-days"></i>1 يوليو 2025
+            </p>
+            }
             <p>
               <span>{{ "diploma.Duration" | translate }} : </span>
               {{ "diploma.2 months" | translate }}
@@ -117,8 +154,23 @@
         <div class="col-sm-6 col-lg-3 height-date mb-3">
           <div
             routerLink="/enroll"
-            class="bg-4 py-5 rounded border border-white shadow-lg dates h-100 overflow-hidden cr"
+            class="bg-4 pb-5 rounded border border-secondary-subtle shadow-lg dates h-100 overflow-hidden cr"
           >
+            @if (LangText()) {
+            <button
+              type="button"
+              class="mb-5 bg-success-subtle w-100 rounded-2 text-success border border-success-subtle py-1 fs-6"
+            >
+              Register Now !!
+            </button>
+            } @if (!LangText()) {
+            <button
+              type="button"
+              class="mb-5 bg-success-subtle w-100 rounded-2 text-success border border-success-subtle py-1 fs-6"
+            >
+              <span> سجل الان</span> !!
+            </button>
+            }
             <h5 class="my-3">
               <span class="span-h3 px-1 py-5 rounded">{{
                 "diploma.Fourt" | translate
@@ -133,11 +185,17 @@
               <span>{{ "diploma.Duration" | translate }} : </span>
               {{ "diploma.2 months" | translate }}
             </p>
+            @if (LangText()) {
             <p>
               <span>{{ "diploma.Exam Date" | translate }} : </span
-              ><i class="mx-1 fa-solid fa-calendar-days"></i
-              >{{ "diploma.1 December,2025" | translate }}
+              ><i class="mx-1 fa-solid fa-calendar-days"></i>1 December,2025
             </p>
+            } @if (!LangText()) {
+            <p>
+              <span>{{ "diploma.Exam Date" | translate }} : </span
+              ><i class="mx-1 fa-solid fa-calendar-days"></i>1 ديسمبر 2025
+            </p>
+            }
           </div>
         </div>
       </div>

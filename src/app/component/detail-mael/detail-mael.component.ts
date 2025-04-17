@@ -2,12 +2,12 @@ import { TranslateModule } from '@ngx-translate/core';
 import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { DetailsService } from '../../core/services/details.service';
 import { Subscription } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { IDetails } from '../../core/interfaces/details';
 @Component({
   selector: 'app-detail-mael',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule,RouterLink],
   templateUrl: './detail-mael.component.html',
   styleUrl: './detail-mael.component.css'
 })

@@ -1,6 +1,6 @@
 @if (category) {
-<div class="bg-main py-5">
-  <section class="text-center bg-main">
+<div class="py-5">
+  <section class="text-center">
     <div class="title py-5">
       <h2 class="text-decoration-underline">
         {{ "all.Category Name" | translate }}:
@@ -17,7 +17,7 @@
           [routerLink]="['/details', onecat.idMeal]"
         >
           <div
-            class="rounded border border-danger-subtle p-3 bg-main shadow h-100"
+            class="rounded border border-danger-subtle p-3 bg-item shadow h-100"
           >
             <img
               src="{{ onecat.strMealThumb }}"

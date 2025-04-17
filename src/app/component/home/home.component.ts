@@ -1,10 +1,11 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, ElementRef, inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule,RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -23,7 +24,7 @@ hourInsec!:number;
 mintInSec!:number;
 idinterval:any;
 showTimeDiffrence() {
-var future = new Date("1 march 2025 9:00:00 am").getTime();
+var future = new Date("1 july 2025 9:00:00 am").getTime();
 var now = new Date().getTime();
 let timeInSec = ( future- now) / 1000;
 

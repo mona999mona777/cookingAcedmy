@@ -1,7 +1,7 @@
 @if (theOrder) {
 <div class="pt-5">
   <section
-    class="container mx-auto width-invoice my-5 border border-info bg-info-subtle rounded-5"
+    class="container mx-auto width-invoice my-5 border border-info bg-invoice rounded-5"
   >
     <h2 class="h2 text-info-emphasis border-bottom border-info py-3">
       {{ "invoice.your invoice" | translate }}
@@ -41,12 +41,6 @@
               >{{ "invoice.User city" | translate }}:</span
             >
             {{ theOrder.shippingAddress.city }}</P
-          >
-          <P>
-            <span class="text-primary-emphasis"
-              >{{ "invoice.User id" | translate }}:</span
-            >
-            {{ theOrder.user._id }}</P
           >
           <P>
             <span class="text-primary-emphasis"

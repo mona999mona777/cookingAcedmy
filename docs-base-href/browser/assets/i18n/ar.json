@@ -68,7 +68,7 @@
 "من المهم جدا التأكيد علي مدي ضرورة وجود كل الوصفات الدقيقة اللذيدة معلومة المصدر في مكان واحد كما إنها تعد من أقدم دبلومات الطهي في مصر وخريجوها يحصلوا علي شهاده معتمده في الطهي سواء من الناحيه العمليه لأفتتاح مشاريعهم الخاصة او لاعداد أشهي الوجبات المنزليه للاسرة" 
     },
     "diploma":{
-        "Diploma Dates 2025":"",
+        "Diploma Dates 2025":"مواعيد الدبلومات لعام 2025",
         "First":"الأولي",
         "second": "الثانية",
         "Third":"الثالثة" ,
@@ -86,12 +86,15 @@
         "1 April,2025": "1 إبريل 2025",
         "1 June,2025":" 1 يونيو 2025",
 
-        "1 July,2025":"1 يوليو 22025",
         "1 september,2025":"1 سبتمبر 2025",
 
         "1 October,2025":"1 أكنوبر 2025",
-        "1 December,2025":"1 ديسمبر"
-    },
+        
+        "Eid Mubarak":"عيد مبارك",
+        "Ramdan Karim":"رمضان كريم",
+        "4% Discount on Eid Al-Fitr":"4% خصم بمناسبة عيد الفطر ",
+        "Registeration Deadline Has Ended":".انتهت مدة التسجيل"
+         },
     "enroll":{
         "Terms And Conditions Of Enrollment":"شروط وأحكام التسجيل",
         "The duration of the diploma is two months from the date of the diploma start and not from the date of reservation, as the diploma dates are fixed and do not change from one person to another according to the reservation date":"مدة الدبلوم شهرين من تاريخ بدء الدبلوم وليس من تاريخ الحجز حيث أن مواعيد الدبلوم ثابتة ولا تتغير من شخص لآخر حسب تاريخ الحجز",
@@ -117,8 +120,7 @@
         "city":"إسم المدينة",
           "confirm":"متابعة",
           "Select City Exam":"أختر مدينة إمتحانك"
-    },
-   
+    },  
     "invoice":{
         "your invoice":"فتورتك",
             "User Name":"اسم العميل ",
@@ -182,5 +184,18 @@
   "Enter valid Reset Code":"كود التأكيد غبر صحيح",
 "reset new password":"تعين كلمة سر جديدة",
   "new password":"كلمة السر الجديدة"
+    },
+    "details":{
+        "Instructions":"لبخطوات و التعليمات",
+        "Area":"المطبخ",
+        "Category":"الأقسام",
+        "Recipes":"المقادير",
+        "Vedio":"الفيديو",
+        "youtube":"youtube"
+    },
+     "all":{
+          "Ingradient Name":"إسم المكون",
+          "Category Name":"قسم",
+          "Area Name":"المطبخ"
     }
     }

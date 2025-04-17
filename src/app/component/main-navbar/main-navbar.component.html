@@ -76,7 +76,10 @@
             >{{ "main-nav.Invoice" | translate }}</a
           >
         </li>
-        <li (click)="closeIteamModal()" class="nav-item form-check form-switch">
+        <li
+          (click)="closeIteamModal()"
+          class="nav-item form-check form-switch mx-1"
+        >
           <a class="toggle-icon">
             <input
               #mood
@@ -200,7 +203,7 @@
                     id="sarchInner"
                     (keyup)="search($event)"
                     type="search"
-                    class="form-control cr"
+                    class="form-control cr placehold"
                     placeholder="{{
                       'navbar.Search By Meal Name' | translate
                     }}..............."
@@ -216,7 +219,7 @@
                           class="col-6 col-lg-4 col-xl-3"
                         >
                           <div
-                            class="rounded border border-danger-subtle p-3 bg-main shadow h-100"
+                            class="rounded border border-danger-subtle p-3 bg-item shadow h-100"
                           >
                             <img
                               src="{{ iteam.strMealThumb }}"
@@ -243,13 +246,24 @@
             </div>
           </div>
         </li>
+
+        @if (LangText()) {
         <li
           (click)="closeIteamModal()"
           (click)="_AuthenService.logout()"
           class="nav-item text-center border border-danger-subtle text-red bg-danger-subtle rounded-2 p-2 mx-2"
         >
-          {{ "main-nav.logout" | translate }}
+          Logout
         </li>
+        } @if (!LangText()) {
+        <li
+          (click)="closeIteamModal()"
+          (click)="_AuthenService.logout()"
+          class="nav-item text-center border border-danger-subtle text-red bg-danger-subtle rounded-2 p-2 mx-2"
+        >
+          تسجيل الخروج
+        </li>
+        }
       </ul>
     </div>
   </div>

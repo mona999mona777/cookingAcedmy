@@ -19,14 +19,19 @@ export class YourexamdateComponent implements  OnDestroy {
   messgsuc!:string;
   messgerr!:string;
   unsub!:Subscription;
-    orderForm:FormGroup=new FormGroup({
+  unsubCartid!:Subscription;
+orderForm:FormGroup=new FormGroup({
       details:new FormControl(null,[Validators.required]),
       phone:new FormControl(null,[Validators.required,Validators.pattern(/^01[125][0-9]{8}$/)]),
       city:new FormControl(null,[Validators.required]),
-    })
- 
-    orderFunc(){
-  if(this.orderForm.valid){
+})
+orderFunc(){
+  // cartId in localstorge
+this.unsubCartid=  this._PaymentsService.getUserCartId().subscribe({
+next:(res)=>{
+localStorage.setItem('cartId',res.cartId);
+// payment methode 2.online-payment
+if(this.orderForm.valid){
     this.isloading=true;
     this._PaymentsService.orderapi(this.orderForm.value).subscribe({
       next:(res)=>{
@@ -37,13 +42,15 @@ export class YourexamdateComponent implements  OnDestroy {
     }
       },
     })
-      }
-      else{
+}
+else{
         this.orderForm.markAllAsTouched();
-      }
+}
     }
-  
-  LangText(){
+  })
+
+}  
+LangText(){
   if (isPlatformBrowser(this._PLATFORM_ID)) {
   if (localStorage.getItem("lang")!=null) {
        if (localStorage.getItem("lang")=='en') {
@@ -58,8 +65,9 @@ export class YourexamdateComponent implements  OnDestroy {
       } 
   }
         return false
-  }
-    ngOnDestroy(): void {
-        this.unsub?.unsubscribe()
-    }
+}
+ngOnDestroy(): void {
+        this.unsub?.unsubscribe();
+        this.unsubCartid?.unsubscribe();
+}
 }

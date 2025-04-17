@@ -49,11 +49,10 @@ registerfunction(){
                   this.messgerror=""
                if(res.message == "success"){
                 localStorage.setItem("token",res.token);
-                // payment methode
+                // payment methode 1.addtocart
               this.unsubadd=this._PaymentsService.addTOCart().subscribe({
                 next:(resAdd)=>{
               this.isloading=false;
-              localStorage.setItem("cartId",resAdd.cartId);
               if(resAdd.status == "success"){
                 setTimeout(() => {
                   this._Router.navigate(['/examPleace']);

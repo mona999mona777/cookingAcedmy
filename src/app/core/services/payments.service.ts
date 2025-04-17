@@ -3,37 +3,33 @@ import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../environment/environment';
 import { jwtDecode } from 'jwt-decode';
-
 @Injectable({
   providedIn: 'root'
 })
 export class PaymentsService {
-  private readonly _HttpClient=inject(HttpClient);
-  userdata:any =null;
-
-
-  addTOCart():Observable<any>{
+private readonly _HttpClient=inject(HttpClient);
+userdata:any =null;
+addTOCart():Observable<any>{
     return  this._HttpClient.post(`${environment.baseUrl}/api/v1/cart`, {
-            "productId": "6428def9dc1175abc65ca061"
-      },
-      // header in interceptors and by config file 
-      )
-    }
-
-    orderapi(data:object):Observable<any>{
+              "productId": '6428def9dc1175abc65ca061'
+        },
+        // header in interceptors and by config file 
+        )
+}
+getUserCartId():Observable<any>{
+return this._HttpClient.get(`${environment.baseUrl}/api/v1/cart`)
+}
+orderapi(data:object):Observable<any>{
       return this._HttpClient.post(`${environment.baseUrl}/api/v1/orders/checkout-session/${localStorage.getItem('cartId')}?url=${environment.urlServer}`,
         {
           "shippingAddress":data
         },
      
     )
-    }///api/v1/cart
-   
-    noCartItems():Observable<any>{
+}///api/v1/cart   
+noCartItems():Observable<any>{
       return this._HttpClient.get(`${environment.baseUrl}/api/v1/cart`)
-    }
-
-
+}
 // 7.decode function: decodetoken and save user data 
 userId:string='';
 decodetoken():void{

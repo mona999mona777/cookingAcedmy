@@ -27,13 +27,22 @@
               <span class="sec-color text-decoration-underline">
                 {{ "details.Area" | translate }} :</span
               >
-              {{ mealdetails.strArea }}
+              <span
+                [routerLink]="['/onearea', mealdetails.strArea]"
+                class="router-word px-2"
+              >
+                {{ mealdetails.strArea }}</span
+              >
             </h4>
             <h4 class="mb-3 prag">
               <span class="sec-color text-decoration-underline">
                 {{ "details.Category" | translate }} :</span
               >
-              {{ mealdetails.strCategory }}
+              <span
+                [routerLink]="['/onecategory', mealdetails.strCategory]"
+                class="router-word px-2"
+                >{{ mealdetails.strCategory }}</span
+              >
             </h4>
             <h4 class="mb-3 sec-color text-decoration-underline">
               {{ "details.Recipes" | translate }} :
