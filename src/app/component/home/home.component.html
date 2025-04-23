@@ -10,7 +10,9 @@
     <div>
       <h2
         routerLink="/DiplopmaDates"
-        class="my-4 text-light text-start text-decoration-underline"
+        class="my-4 text-light text-decoration-underline"
+        [class.text-end]="!LangText()"
+        [class.text-start]="LangText()"
       >
         <b>{{ "home.Next Cooking Class Starts After:" | translate }}</b>
       </h2>

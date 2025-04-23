@@ -17,7 +17,11 @@
             class="w-100 rounded-5"
           />
         </div>
-        <div class="col-xl-6 border-start border-info">
+        <div
+          class="col-xl-6 border-info"
+          [class.border-start]="LangText()"
+          [class.border-end]="!LangText()"
+        >
           <P>
             <span class="text-primary-emphasis"
               >{{ "invoice.User Name" | translate }}:</span
