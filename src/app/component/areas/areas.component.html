@@ -2,15 +2,31 @@
 <div class="py-md-5 py-lg-0 py-xxl-3">
   <section class="py-5 text-center">
     <div class="content container-fluid py-5">
+      @if (LangText()) {
+      <p class="emojii text-start fs-5">
+        <span>
+          One Click, New Country, Endless flavors Start Your Journey By One
+          Click.
+        </span>
+        <span><i class="fa-regular fa-face-smile-wink mx-2 fs-3"></i></span>
+        <span><i class="fa-regular fa-face-smile-beam fs-3"></i></span>
+      </p>
+      } @if (!LangText()) {
+      <p class="emojii text-end fs-5">
+        <span>
+          ابدأ رحلتك إلي بلد جديدة ونكهات لا حصر لها , هيلا اختر وجهتك الجديدة .
+        </span>
+        <span><i class="fa-regular fa-face-smile-wink mx-2 fs-3"></i></span>
+        <span><i class="fa-regular fa-face-smile-beam fs-3"></i></span>
+      </p>
+      }
       <div class="row g-4">
         @for (area of allareas; track $index) {
         <div
           [routerLink]="['/onearea', area.strArea]"
           class="col-md-6 col-lg-4 col-xl-3"
         >
-          <div
-            class="rounded border border-danger-subtle p-3 bg-item shadow h-100"
-          >
+          <div class="rounded border-castome p-3 bg-item shadow h-100">
             <h3 class="h4 sec-color-weight">{{ area.strArea }}</h3>
           </div>
         </div>

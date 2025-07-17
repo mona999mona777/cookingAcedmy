@@ -1,0 +1,33 @@
+.cook {
+  position: relative;
+  overflow: hidden;
+  border: solid 2px var(--cat-border);
+}
+.cook-max {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 2s;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.cook:hover .cook-max {
+  transform: translateY(0);
+}
+.cook-min {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.cook:hover .cook-min {
+  opacity: 0;
+}
+
+.h6-small {
+  font-size: small;
+}
+.small-max {
+  font-size: small;
+}

@@ -1,6 +1,6 @@
 :root {
   --font-family: "Playwrite DE Grund", cursive;
-  --main-color: rgb(145, 138, 84);
+  --main-color: rgb(129, 102, 70);
   --sec-color: #405d72;
   --sec-color-main: #405d72;
   --btn-main: #405d72;
@@ -13,6 +13,7 @@
   --nav-linkactive: rgb(247, 223, 196);
   --bg-main-dark: #f7e7dc;
   --span-h3: rgba(64, 93, 114, 0.8);
+  --spanh3-color: var(--white);
   --bg-main-galssy: rgba(255, 255, 255, 0.5);
   --main-h2: rgb(25, 61, 88);
   --main-h2-sec: rgb(74, 74, 74);
@@ -32,8 +33,12 @@
   --bg-home: rgba(244, 167, 140, 0.4);
   --bg-main: transparent;
   --words: rgb(13, 58, 90);
+  --cat-border: rgb(62, 60, 96);
+  --emoji-color: rgb(207, 91, 118);
+  --home-line: rgb(46, 17, 0);
 }
-body {
+body,
+.chefs-bg {
   font-family: var(--font-family) !important;
   background-image: -webkit-gradient(
       linear,
@@ -77,6 +82,12 @@ body {
 .modalfooter-bg,
 .modalheader-bg {
   background-color: var(--footer-header-modal);
+}
+.border-castome {
+  border: solid var(--cat-border) 2px;
+}
+.emojii {
+  color: var(--emoji-color);
 }
 /* --footer-header-modal */
 .home {
@@ -164,6 +175,9 @@ h2,
   font-weight: 700;
   font-size: 28px;
 }
+.home-exam {
+  color: var(--home-line);
+}
 /* bg-color */
 .bg-item {
   background-color: var(--bg-main);
@@ -182,7 +196,7 @@ h2,
 }
 .span-h3 {
   background-color: var(--span-h3);
-  color: var(--color-light);
+  color: var(--spanh3-color);
   font-weight: 700;
   font-size: 30px;
 }
@@ -278,7 +292,6 @@ h2,
   border-bottom: solid 1px rgb(97, 71, 42);
 }
 .bg-invoice {
-  /* background-color: var(--invoice); */
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -441,34 +454,36 @@ a {
   font-size: larger;
 }
 .darkmood {
-  /* --constant-color: rgba(31, 49, 62); */
-
   --primary-glassy-bg: rgba(39, 27, 21, 0.5);
-  --body-bg: rgba(39, 27, 21, 0.8);
+  --body-bg: rgba(21, 8, 1, 0.8);
   --gray: rgba(145, 123, 111, 0.7);
-  --span-h3: rgba(191, 140, 112, 0.7);
+  /* --span-h3: rgba(191, 140, 112, 0.7); */
+  /* --spanh3-color: rgb(243, 215, 183); */
   --bony-mahrok: rgba(29, 27, 26, 0.7);
   --bony: rgba(45, 39, 36, 0.5);
   --bg-home: rgba(63, 52, 46, 0.7);
   --navbar-bg: rgba(63, 52, 46, 0.8);
-  --main-h2-sec: rgba(101, 190, 253, 0.9);
-  --main-h2: rgba(205, 208, 209, 0.9);
-  --nav-link: rgb(255, 255, 255);
+  --main-h2-sec: rgba(255, 255, 255, 0.7);
+  --main-h2: rgb(83, 172, 240);
+  --nav-link: rgb(230, 214, 214);
   --nav-linkactive: rgb(243, 215, 183);
   --footer-header-modal: rgba(191, 140, 112, 0.4);
-  --sec-color: rgba(180, 222, 252, 0.9);
+  --sec-color: rgb(242, 245, 205);
   --danger: rgb(255, 140, 167); /*2 color  red and yellow*/
-  --testmonial: rgba(191, 140, 112, 0.4);
-  --main-color: rgb(252, 216, 175);
-  --sec-color-main: rgba(191, 140, 112, 0.7);
+  --testmonial: rgb(40, 51, 59, 0.9);
+  --main-color: rgb(246, 198, 144);
+  /* --sec-color-main: rgba(64, 93, 114, 0.9); */
   --bg-main-dark: rgba(87, 88, 90, 0.5);
   --bg-main-galssy: rgba(63, 52, 46, 0.7);
   --btn-navs: white;
   /* --bg-main: rgba(191, 140, 112, 0.7); */
-  --router-word-color: rgb(251, 188, 203);
-  --router-word-hover: rgba(127, 187, 233, 0.9);
+  --router-word-color: rgb(255, 140, 167);
+  --router-word-hover: #9ad1fb;
   --words: rgba(149, 205, 249, 0.9);
-  --invoice: rgb(255, 255, 255, 0.7);
+  --invoice: rgba(64, 93, 114, 0.5);
+  --cat-border: black;
+  --emoji-color: rgba(149, 205, 249, 0.9);
+  --home-line: rgb(255, 238, 219);
   .prag {
     color: white !important;
   }

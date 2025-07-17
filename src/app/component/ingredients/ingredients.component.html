@@ -2,15 +2,31 @@
 <div class="py-md-5 py-lg-0 py-xxl-3">
   <section class="py-5 text-center">
     <div class="content container-fluid py-5">
+      @if (LangText()) {
+      <p class="emojii text-start fs-5">
+        <span>
+          One Ingrediant is All it Tasks to Unlock Amazing Recipes!! So,Let's
+          Pick One.
+        </span>
+        <span><i class="fa-regular fa-face-smile-wink mx-1 fs-3"></i></span>
+        <span><i class="fa-regular fa-face-smile-beam fs-3"></i></span>
+      </p>
+      } @if (!LangText()) {
+      <p class="emojii text-end fs-5">
+        <span>
+          كل ما تحتاجه هو مكون واحد لاكتشاف وصفات جديده , لذا هيا نختار واحداّّ.
+        </span>
+        <span><i class="fa-regular fa-face-smile-wink mx-1 fs-3"></i></span>
+        <span><i class="fa-regular fa-face-smile-beam fs-3"></i></span>
+      </p>
+      }
       <div class="row g-4">
         @for (ingra of this.allingradiants; track $index) {
         <div
           [routerLink]="['/oneingradiant', ingra.strIngredient]"
           class="col-md-6 col-lg-4 col-xl-3"
         >
-          <div
-            class="rounded border border-danger-subtle p-3 bg-item shadow h-100"
-          >
+          <div class="rounded border-castome p-3 bg-item shadow h-100">
             <h3 class="h5 sec-color-weight">{{ ingra.strIngredient }}</h3>
           </div>
         </div>

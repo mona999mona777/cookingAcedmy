@@ -1,7 +1,7 @@
 @if (area) {
 <div class="py-5">
   <section class="py-5 text-center py-5">
-    <div class="title py-5">
+    <div class="title py-2">
       <h2 class="text-decoration-underline primary-color">
         {{ "all.Area Name" | translate }}:
         <span class="sec-color text-decoration-underline">{{
@@ -16,9 +16,7 @@
           class="col-md-6 col-lg-4 col-xl-3"
           [routerLink]="['/details', onearea.idMeal]"
         >
-          <div
-            class="rounded border border-danger-subtle p-3 bg-item shadow h-100"
-          >
+          <div class="rounded border-castome p-3 bg-item shadow-lg h-100">
             <img
               src="{{ onearea.strMealThumb }}"
               class="w-100 rounded"

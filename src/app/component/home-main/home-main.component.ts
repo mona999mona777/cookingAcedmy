@@ -25,7 +25,7 @@ export class HomeMainComponent implements OnInit,OnDestroy{
   mintInSec!:number;
   idinterval:any;
   showTimeDiffrence() {
-    var future = new Date("1 july 2025 9:00:00 am").getTime();
+    var future = new Date("1 october 2025 9:00:00 am").getTime();
     var now = new Date().getTime();
     let timeInSec = ( future- now) / 1000;
   

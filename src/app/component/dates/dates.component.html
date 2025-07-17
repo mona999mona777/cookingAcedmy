@@ -106,24 +106,14 @@
         </div>
         <div class="col-sm-6 col-lg-3 height-date mb-3">
           <div
-            routerLink="/enroll"
             class="bg-3 pb-5 rounded border border-secondary-subtle shadow-lg dates h-100 overflow-hidden cr"
           >
-            @if (LangText()) {
             <button
               type="button"
-              class="mb-5 bg-success-subtle w-100 rounded-2 text-success border border-success-subtle py-1 fs-6"
+              class="mb-5 bg-danger w-100 rounded-2 text-light border border-danger py-1 fs-6"
             >
-              Register Now !!
+              {{ "diploma.Registeration Deadline Has Ended" | translate }}
             </button>
-            } @if (!LangText()) {
-            <button
-              type="button"
-              class="mb-5 bg-success-subtle w-100 rounded-2 text-success border border-success-subtle py-1 fs-6"
-            >
-              <span> سجل الان</span> !!
-            </button>
-            }
             <h5 class="my-3">
               <span class="span-h3 px-1 py-5 rounded">{{
                 "diploma.Third" | translate

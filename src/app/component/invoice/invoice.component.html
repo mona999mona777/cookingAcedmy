@@ -1,9 +1,9 @@
 @if (theOrder) {
 <div class="pt-5">
   <section
-    class="container mx-auto width-invoice my-5 border border-info bg-invoice rounded-5"
+    class="container mx-auto width-invoice my-5 border border-secondary bg-invoice rounded-5"
   >
-    <h2 class="h2 text-info-emphasis border-bottom border-info py-3">
+    <h2 class="h2 sec-color border-bottom border-secondary py-3">
       {{ "invoice.your invoice" | translate }}
     </h2>
     <div
@@ -18,63 +18,59 @@
           />
         </div>
         <div
-          class="col-xl-6 border-info"
+          class="col-xl-6 border-secondary"
           [class.border-start]="LangText()"
           [class.border-end]="!LangText()"
         >
-          <P>
-            <span class="text-primary-emphasis"
+          <P class="prag">
+            <span class="main-color"
               >{{ "invoice.User Name" | translate }}:</span
             >
             {{ theOrder.user.name }}</P
           >
-          <P>
-            <span class="text-primary-emphasis"
+          <P class="prag">
+            <span class="main-color"
               >{{ "invoice.User Email" | translate }}:</span
             >
             {{ theOrder.user.email }}</P
           >
-          <P>
-            <span class="text-primary-emphasis"
+          <P class="prag">
+            <span class="main-color"
               >{{ "invoice.User phone" | translate }}:</span
             >
             {{ theOrder.shippingAddress.phone }}</P
           >
-          <P>
-            <span class="text-primary-emphasis"
+          <P class="prag">
+            <span class="main-color"
               >{{ "invoice.User city" | translate }}:</span
             >
             {{ theOrder.shippingAddress.city }}</P
           >
-          <P>
-            <span class="text-primary-emphasis"
-              >{{ "invoice.date" | translate }}:</span
-            >
+          <P class="prag">
+            <span class="main-color">{{ "invoice.date" | translate }}:</span>
             {{ theOrder.paidAt | date }}</P
           >
 
-          <P>
-            <span class="text-primary-emphasis"
+          <P class="prag">
+            <span class="main-color"
               >{{ "invoice.payment status" | translate }}:</span
             >
             {{ theOrder.isPaid }}</P
           >
-          <P>
-            <span class="text-primary-emphasis"
+          <P class="prag">
+            <span class="main-color"
               >{{ "invoice.Payment Method" | translate }} :</span
             >
             {{ theOrder.paymentMethodType }}</P
           >
-          <P>
-            <span class="text-primary-emphasis"
+          <P class="prag">
+            <span class="main-color"
               >{{ "invoice.Order Id" | translate }}:</span
             >
             {{ theOrder.id }}</P
           >
-          <p>
-            <span class="text-primary-emphasis"
-              >{{ "invoice.price" | translate }} :</span
-            >
+          <p class="prag">
+            <span class="main-color">{{ "invoice.price" | translate }} :</span>
             {{ theOrder.totalOrderPrice }} {{ "invoice.EPG" | translate }}
           </p>
         </div>

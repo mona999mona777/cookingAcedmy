@@ -1,10 +1,11 @@
-import { Component, inject, OnDestroy, OnInit } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { CatService } from '../../core/services/cat.service';
 import { Subscription } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { IAllcat } from '../../core/interfaces/allcat';
 import { RouterLink } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-categories',
@@ -16,6 +17,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class CategoriesComponent implements OnInit , OnDestroy {
   private readonly _CatService=inject(CatService);
   private readonly _NgxSpinnerService=inject(NgxSpinnerService);
+  private readonly _PLATFORM_ID=inject(PLATFORM_ID);
   allcategories!:IAllcat[];
  unsub!:Subscription;
 ngOnInit(): void {
@@ -27,5 +29,21 @@ ngOnInit(): void {
 }
 ngOnDestroy(): void {
   this.unsub?.unsubscribe();
+}
+LangText(){
+if (isPlatformBrowser(this._PLATFORM_ID)) {
+if (localStorage.getItem("lang")!=null) {
+     if (localStorage.getItem("lang")=='en') {
+      return true;
+     }
+     else if (localStorage.getItem("lang")=='ar') {
+      return false;
+     }
+} 
+else if (localStorage.getItem("lang")==null) {
+             return true;            
+    } 
+}
+      return false
 }
 }

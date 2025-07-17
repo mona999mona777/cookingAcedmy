@@ -64,7 +64,7 @@
     "test":{
         "Testimonials":"Testimonials",
         "(Reviews Of Our Students)":"(Reviews Of Our Students)",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatur! Unde, soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatusolut.":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatur! Unde, soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatusolut."        
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatur! Unde, soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatusolut.":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatur! Unde, soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum nulla exercitationem inventore temporibus reprehenderit nisi impedit aspernatusolut"        
     },
     "diploma":{
             "Diploma Dates 2025":"Diploma Dates 2025",
@@ -196,4 +196,5 @@
       "Category Name":"Category Name",
       "Area Name":"Area Name"
     }
+
 }

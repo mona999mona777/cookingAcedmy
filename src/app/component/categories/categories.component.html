@@ -6,21 +6,38 @@
         @for (cat of allcategories; track $index) {
         <div
           [routerLink]="['/onecategory', cat.strCategory]"
-          class="col-md-6 col-lg-4 col-xl-3"
+          class="col-md-6 col-lg-4 col-xl-3 position-relative"
         >
-          <div
-            class="rounded border border-danger-subtle p-3 bg-item shadow h-100"
-          >
-            <img
-              src="{{ cat.strCategoryThumb }}"
-              class="w-100"
-              alt="{{ cat.strCategory }}"
-            />
+          <div class="cook rounded-3 shadow-lg">
+            <div class="rounded p-3 bg-item cook-min">
+              <img
+                src="{{ cat.strCategoryThumb }}"
+                class="w-100"
+                alt="{{ cat.strCategory }}"
+              />
 
-            <h3 class="h4 sec-color mt-2">{{ cat.strCategory }}</h3>
-            <p class="desc text-secondary-emphasis prag">
-              {{ cat.strCategoryDescription.split(" ", 10).join(" ") }}
-            </p>
+              <h3 class="h4 sec-color mt-2">{{ cat.strCategory }}</h3>
+              <p class="desc text-secondary-emphasis prag">
+                {{ cat.strCategoryDescription.split(" ", 10).join(" ") }}
+              </p>
+            </div>
+            <div class="rounded p-3 bg-item cook-max">
+              <img
+                src="{{ cat.strCategoryThumb }}"
+                class="w-75"
+                alt="{{ cat.strCategory }}"
+              />
+              <h3 class="sec-color my-0 h6-small">{{ cat.strCategory }}</h3>
+              @if (LangText()) {
+              <p class="text-start text-secondary-emphasis prag small-max">
+                {{ cat.strCategoryDescription }}
+              </p>
+              } @if (!LangText()) {
+              <p class="text-end text-secondary-emphasis prag small-max">
+                {{ cat.strCategoryDescription }}
+              </p>
+              }
+            </div>
           </div>
         </div>
         }

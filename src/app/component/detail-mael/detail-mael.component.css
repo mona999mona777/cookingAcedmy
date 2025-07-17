@@ -1,0 +1,8 @@
+button {
+  color: white !important;
+  background-color: red !important;
+}
+button:hover {
+  color: red !important;
+  background-color: transparent !important;
+}

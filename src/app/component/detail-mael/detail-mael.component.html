@@ -1,16 +1,18 @@
 @if (mealdetails) {
 <div class="bg-main py-5">
-  <section class="py-5">
+  <section class="py-1">
     <div class="content container-fluid py-5">
       <div class="row g-4">
         <div class="col-md-4">
           <div>
             <img
               src="{{ mealdetails.strMealThumb }}"
-              class="w-100 rounded border border-danger-subtle"
+              class="w-100 rounded border-castome"
               alt="{{ mealdetails.strMeal }}"
             />
-            <h3 class="bg-header-galeey mt-3 py-3 rounded text-center">
+            <h3
+              class="bg-header-galeey mt-3 py-3 rounded text-center border-castome"
+            >
               {{ mealdetails.strMeal }}.
             </h3>
           </div>
@@ -60,9 +62,7 @@
                 {{ "details.Vedio" | translate }}:
               </h4>
               <a [href]="mealdetails.strYoutube"
-                ><button
-                  class="bg-danger-subtle p-3 rounded text-danger border border-danger-subtle meal-desc"
-                >
+                ><button class="p-3 rounded border border-danger meal-desc">
                   {{ "details.youtube" | translate }}
                 </button></a
               >
