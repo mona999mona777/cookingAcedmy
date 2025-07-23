@@ -4,7 +4,10 @@
 .imago {
   width: 100px !important;
 }
-
+.imago-girl {
+  width: 100px !important;
+  height: 100px !important;
+}
 /* media query */
 @media (max-width: 992px) {
   .test-prag-width {
